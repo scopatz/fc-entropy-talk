@@ -1251,12 +1251,48 @@ div.output_prompt {
 <h2>Problem Space</h2>
 <div style="text-align:center;"><img src="figs/physics_vs_exec_time.svg" width="75%" /><h3>Figure 1: Physics Modeled versus Execution Time</h3></div>
 </div>
+</section>
+<section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<script type="text/javascript">
+    window.onload=function(){
+    var tfrow = document.getElementById('modapptable').rows.length;
+    var tbRow=[];
+    for (var i=1;i<tfrow;i++) {
+        tbRow[i]=document.getElementById('modapptable').rows[i];
+        tbRow[i].onmouseover = function(){
+          this.style.backgroundColor = '#f3f8aa';
+        };
+        tbRow[i].onmouseout = function() {
+          this.style.backgroundColor = '#ffffff';
+        };
+    }
+};
+</script>
+
+<style type="text/css">
+table.tftable {color:#333333;width:80%;border-width: 1px;border-color: #a9a9a9;border-collapse: collapse;text-align:center; margin: auto;}
+table.tftable th {background-color:#b8b8b8;border-width: 1px;padding: 4px;border-style: solid;border-color: #a9a9a9;text-align:left;}
+table.tftable tr {background-color:#ffffff;text-align:center;}
+table.tftable td {border-width: 1px;padding: 4px;border-style: solid;border-color: #a9a9a9;text-align:center;}
+</style>
+
+<h2>Modeling Approaches</h2>
+<div style="text-align:center;"><img src="figs/basic_nfc_schema.svg" /></div>
+
+<table id="modapptable" class="tftable" border="1">
+<tr><th>Component</th><th>Recipes</th><th>Essential</th><th>Transport</th></tr>
+<tr><td style="text-align:left;"><b>Front End:</b></font></td><td>Recipes</td><td>Physics Models</td><td>Physics Models</td></tr>
+<tr><td style="text-align:left;"><b>Reactor:</b></td><td>Recipes</td><td>Rapid Burnup Code (<font style="color:red;">Bright</font>)</td><td>Neutron Transport</td></tr>
+<tr><td style="text-align:left;"><b>Repository:</b></td><td>Curve Fits</td><td>Rapid Code (<font style="color:red;">Cyder</font>)</td><td>Neutron Transport</td></tr>
+</table>
+</div>
 <div style=display:none class="text_cell_render border-box-sizing rendered_html">
 <script type="text/javascript">IPython.notebook.save_notebook();</script>
 </div>
 <div style=display:none class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="o">!</span>make
 </pre></div>
