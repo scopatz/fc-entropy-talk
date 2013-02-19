@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="25cm" height="17cm" viewBox="12 195 492 332" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 4; stroke: #000000" x1="100" y1="480" x2="100" y2="211.972"/>
+    <polygon style="fill: #000000" points="100,204.472 105,214.472 100,211.972 95,214.472 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 4; stroke: #000000" points="100,204.472 105,214.472 100,211.972 95,214.472 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 4; stroke: #000000" x1="100" y1="480" x2="488.028" y2="480"/>
+    <polygon style="fill: #000000" points="495.528,480 485.528,485 488.028,480 485.528,475 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 4; stroke: #000000" points="495.528,480 485.528,485 488.028,480 485.528,475 "/>
+  </g>
+  <text style="fill: #000000;text-anchor:start;font-size:27.0933;font-family:Times New Roman;font-style:normal;font-weight:normal" x="207.272" y="521.414">
+    <tspan x="207.272" y="521.414">Physics Included</tspan>
+  </text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="120" y1="460" x2="120" y2="500"/>
+  <text style="fill: #000000;text-anchor:start;font-size:18.0622;font-family:Times New Roman;font-style:normal;font-weight:normal" x="104.243" y="516.464">
+    <tspan x="104.243" y="516.464">Low</tspan>
+  </text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="460" y1="460" x2="460" y2="500"/>
+  <text style="fill: #000000;text-anchor:start;font-size:18.0622;font-family:Times New Roman;font-style:normal;font-weight:normal" x="444.242" y="516.464">
+    <tspan x="444.242" y="516.464">High</tspan>
+  </text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="80" y1="440" x2="120" y2="440"/>
+  <text style="fill: #000000;text-anchor:end;font-size:18.0622;font-family:Times New Roman;font-style:normal;font-weight:normal" x="73.234" y="444.242">
+    <tspan x="73.234" y="444.242">Instant</tspan>
+  </text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="80" y1="400" x2="120" y2="400"/>
+  <text style="fill: #000000;text-anchor:end;font-size:18.0622;font-family:Times New Roman;font-style:normal;font-weight:normal" x="73.234" y="404.242">
+    <tspan x="73.234" y="404.242">Seconds</tspan>
+  </text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="80" y1="360" x2="120" y2="360"/>
+  <text style="fill: #000000;text-anchor:end;font-size:18.0622;font-family:Times New Roman;font-style:normal;font-weight:normal" x="73.234" y="364.242">
+    <tspan x="73.234" y="364.242">Minutes</tspan>
+  </text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="80" y1="320" x2="120" y2="320"/>
+  <text style="fill: #000000;text-anchor:end;font-size:18.0622;font-family:Times New Roman;font-style:normal;font-weight:normal" x="73.234" y="324.242">
+    <tspan x="73.234" y="324.242">Hours</tspan>
+  </text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="80" y1="280" x2="120" y2="280"/>
+  <text style="fill: #000000;text-anchor:end;font-size:18.0622;font-family:Times New Roman;font-style:normal;font-weight:normal" x="73.234" y="284.242">
+    <tspan x="73.234" y="284.242">Days</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:start;font-size:27.0933;font-family:Times New Roman;font-style:normal;font-weight:normal" x="29.8994" y="252.928">
+    <tspan x="29.8994" y="252.928">Time</tspan>
+  </text>
+  <g>
+    <polygon style="fill: #000099" points="140.607,414.344 150.607,424.344 140.607,434.344 130.607,424.344 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="140.607,414.344 150.607,424.344 140.607,434.344 130.607,424.344 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="140.607,414.344 150.607,424.344 140.607,434.344 130.607,424.344 "/>
+  </g>
+  <text style="fill: #000000;text-anchor:start;font-size:18.0622;font-family:Times New Roman;font-style:normal;font-weight:normal" x="149.12" y="443.842">
+    <tspan x="149.12" y="443.842">Recipes</tspan>
+  </text>
+  <g>
+    <polygon style="fill: #ff0000" points="416.508,278.546 426.508,288.546 416.508,298.546 406.508,288.546 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="416.508,278.546 426.508,288.546 416.508,298.546 406.508,288.546 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="416.508,278.546 426.508,288.546 416.508,298.546 406.508,288.546 "/>
+  </g>
+  <text style="fill: #000000;text-anchor:start;font-size:18.0622;font-family:Times New Roman;font-style:normal;font-weight:normal" x="378.352" y="250.77">
+    <tspan x="378.352" y="250.77">Full Core</tspan>
+    <tspan x="378.352" y="273.348">Calculations</tspan>
+  </text>
+  <g>
+    <rect style="fill: #57d157" x="181.253" y="379.506" width="232.437" height="44.5778"/>
+    <path style="fill: #57d157" d="M 181.253,379.506 A 10,10 0 0 0 171.253,389.506 L 181.253,389.506 z"/>
+    <path style="fill: #57d157" d="M 423.69,389.506 A 10,10 0 0 0 413.69,379.506 L 413.69,389.506 z"/>
+    <rect style="fill: #57d157" x="171.253" y="389.506" width="252.437" height="24.5778"/>
+    <path style="fill: #57d157" d="M 171.253,414.084 A 10,10 0 0 0 181.253,424.084 L 181.253,414.084 z"/>
+    <path style="fill: #57d157" d="M 413.69,424.084 A 10,10 0 0 0 423.69,414.084 L 413.69,414.084 z"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="181.253" y1="379.506" x2="413.69" y2="379.506"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="181.253" y1="424.084" x2="413.69" y2="424.084"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 181.253,379.506 A 10,10 0 0 0 171.253,389.506"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 423.69,389.506 A 10,10 0 0 0 413.69,379.506"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="171.253" y1="389.506" x2="171.253" y2="414.084"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="423.69" y1="389.506" x2="423.69" y2="414.084"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 171.253,414.084 A 10,10 0 0 0 181.253,424.084"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 413.69,424.084 A 10,10 0 0 0 423.69,414.084"/>
+    <text style="fill: #000000;text-anchor:middle;font-size:18.0622;font-family:Times New Roman;font-style:normal;font-weight:normal" x="297.471" y="406.606">
+      <tspan x="297.471" y="406.606">Region of Interest</tspan>
+    </text>
+  </g>
+</svg>

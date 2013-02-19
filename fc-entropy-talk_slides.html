@@ -1194,24 +1194,71 @@ div.output_prompt {
 <section>
 <div class="text_cell_render border-box-sizing rendered_html">
 <div style="text-align:center">
-
-<h1>Not Your Physists' Entropy</h1>
+<h1>Not Your Physicists' Entropy</h1>
 <h2>Information Theory Applications to the Nuclear Fuel Cycle</h2>
 </div>
-
 <div style="text-align:center">Dr. Anthony Michael Scopatz</div>
-
 <div style="text-align:center">The University of Chicago, The Flash Center for Computational Science</div>
-
 <div style="text-align:center">UW-Madison, February 26th, 2013</div>
+</div>
+<div style=display:none class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+
+</div>
+</div>
 </div>
 </section>
 <section>
-<div class="cell border-box-sizing code_cell vbox">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>What is the Nuclear Fuel Cycle?</h2>
+<p>Well, we can ask wikipedia...</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<div style="text-align:center;"><iframe src=http://en.wikipedia.org/wiki/Nuclear_fuel_cycle?useformat=mobile width=500 height=325></iframe></div>
+</div>
+<div class="fragment" class="text_cell_render border-box-sizing rendered_html">
+<div style="text-align:right">...but that isn't very formal!</div>
+</div>
+</section>
+<section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>How do we model the fuel cycle?</h2>
+<ul>
+<li>Most simulations are formulated on premade base-case scenarios:</li>
+</ul>
+<p><img alt="alt text" src="figs/once-through.svg" /></p>
+</div>
+<div class="fragment" class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>These base cases are very well studied.</li>
+</ul>
+</div>
+<div class="fragment" class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>However, what is <strong>not</strong> well known is how these sample scenarios are affected by perturbations to their initial physical parameters.</li>
+</ul>
+</div>
+<div class="fragment" class="text_cell_render border-box-sizing rendered_html">
+<div style="text-align:center;font-style:italic">Do our intial parameter choices yield the ‘best’ solution?</div>
+</div>
+</section>
+<section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Problem Space</h2>
+<div style="text-align:center;"><img src="figs/physics_vs_exec_time.svg" width="75%" /><h3>Figure 1: Physics Modeled versus Execution Time</h3></div>
+</div>
+<div style=display:none class="text_cell_render border-box-sizing rendered_html">
+<script type="text/javascript">IPython.notebook.save_notebook();</script>
+</div>
+<div style=display:none class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="input_area box-flex1">
-<div class="highlight"><pre><span class="n">Waka</span>
+<div class="highlight"><pre><span class="o">!</span>make
 </pre></div>
 
 </div>
@@ -1220,13 +1267,13 @@ div.output_prompt {
 <div class="output vbox">
 <div class="hbox output_area">
 <div class="prompt output_prompt"></div>
-<div class="output_subarea output_pyerr">
-<pre><span class="ansired">---------------------------------------------------------------------------</span>
-<span class="ansired">NameError</span>                                 Traceback (most recent call last)
-<span class="ansigreen">&lt;ipython-input-1-530c7d7e09a4&gt;</span> in <span class="ansicyan">&lt;module&gt;</span><span class="ansiblue">()</span>
-<span class="ansigreen">----&gt; 1</span><span class="ansiyellow"> </span>Waka<span class="ansiyellow"></span>
-
-<span class="ansired">NameError</span>: name &apos;Waka&apos; is not defined</pre>
+<div class="output_subarea output_stream output_stdout">
+<pre>cp -r ~/nbconvert/reveal . 
+rm -rf reveal/.git* 
+cp classy.css reveal/css/theme/ 
+python ~/nbconvert/nbconvert.py -f reveal fc-entropy-talk.ipynb 
+sed -i &apos;s:reveal/css/theme/classy.css:reveal/css/theme/classy.css:&apos; fc-entropy-talk_slides.html 
+</pre>
 </div>
 </div>
 </div>

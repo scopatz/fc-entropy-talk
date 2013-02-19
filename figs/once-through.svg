@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="28cm" height="5cm" viewBox="6 5 551 86" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="94.7" y1="55" x2="114.264" y2="55"/>
+    <polygon style="fill: #000000" points="121.764,55 111.764,60 114.264,55 111.764,50 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="121.764,55 111.764,60 114.264,55 111.764,50 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="211.4" y1="55" x2="230.264" y2="55"/>
+    <polygon style="fill: #000000" points="237.764,55 227.764,60 230.264,55 227.764,50 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="237.764,55 227.764,60 230.264,55 227.764,50 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="325.95" y1="55" x2="346.264" y2="55"/>
+    <polygon style="fill: #000000" points="353.764,55 343.764,60 346.264,55 343.764,50 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="353.764,55 343.764,60 346.264,55 343.764,50 "/>
+  </g>
+  <g>
+    <rect style="fill: #f7a058" x="249.978" y="20" width="65.9938" height="70"/>
+    <path style="fill: #f7a058" d="M 249.978,20 A 10,10 0 0 0 239.978,30 L 249.978,30 z"/>
+    <path style="fill: #f7a058" d="M 325.972,30 A 10,10 0 0 0 315.972,20 L 315.972,30 z"/>
+    <rect style="fill: #f7a058" x="239.978" y="30" width="85.9938" height="50"/>
+    <path style="fill: #f7a058" d="M 239.978,80 A 10,10 0 0 0 249.978,90 L 249.978,80 z"/>
+    <path style="fill: #f7a058" d="M 315.972,90 A 10,10 0 0 0 325.972,80 L 315.972,80 z"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #df6c11" x1="249.978" y1="20" x2="315.972" y2="20"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #df6c11" x1="249.978" y1="90" x2="315.972" y2="90"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #df6c11" d="M 249.978,20 A 10,10 0 0 0 239.978,30"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #df6c11" d="M 325.972,30 A 10,10 0 0 0 315.972,20"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #df6c11" x1="239.978" y1="30" x2="239.978" y2="80"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #df6c11" x1="325.972" y1="30" x2="325.972" y2="80"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #df6c11" d="M 239.978,80 A 10,10 0 0 0 249.978,90"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #df6c11" d="M 315.972,90 A 10,10 0 0 0 325.972,80"/>
+    <text style="fill: #000000;text-anchor:middle;font-size:12.8;font-family:Times New Roman;font-style:normal;font-weight:700" x="282.975" y="50.45">
+      <tspan x="282.975" y="50.45">LWR Fuel</tspan>
+      <tspan x="282.975" y="66.45">Fabrication</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #a3e65f" x="133.991" y="20" width="67.4188" height="70"/>
+    <path style="fill: #a3e65f" d="M 133.991,20 A 10,10 0 0 0 123.991,30 L 133.991,30 z"/>
+    <path style="fill: #a3e65f" d="M 211.409,30 A 10,10 0 0 0 201.409,20 L 201.409,30 z"/>
+    <rect style="fill: #a3e65f" x="123.991" y="30" width="87.4188" height="50"/>
+    <path style="fill: #a3e65f" d="M 123.991,80 A 10,10 0 0 0 133.991,90 L 133.991,80 z"/>
+    <path style="fill: #a3e65f" d="M 201.409,90 A 10,10 0 0 0 211.409,80 L 201.409,80 z"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #006304" x1="133.991" y1="20" x2="201.409" y2="20"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #006304" x1="133.991" y1="90" x2="201.409" y2="90"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #006304" d="M 133.991,20 A 10,10 0 0 0 123.991,30"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #006304" d="M 211.409,30 A 10,10 0 0 0 201.409,20"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #006304" x1="123.991" y1="30" x2="123.991" y2="80"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #006304" x1="211.409" y1="30" x2="211.409" y2="80"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #006304" d="M 123.991,80 A 10,10 0 0 0 133.991,90"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #006304" d="M 201.409,90 A 10,10 0 0 0 211.409,80"/>
+    <text style="fill: #000000;text-anchor:middle;font-size:12.8;font-family:Times New Roman;font-style:normal;font-weight:700" x="167.7" y="58.45">
+      <tspan x="167.7" y="58.45">Enrichment</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #fdfd1f" x="366" y="20" width="64" height="70"/>
+    <path style="fill: #fdfd1f" d="M 366,20 A 10,10 0 0 0 356,30 L 366,30 z"/>
+    <path style="fill: #fdfd1f" d="M 440,30 A 10,10 0 0 0 430,20 L 430,30 z"/>
+    <rect style="fill: #fdfd1f" x="356" y="30" width="84" height="50"/>
+    <path style="fill: #fdfd1f" d="M 356,80 A 10,10 0 0 0 366,90 L 366,80 z"/>
+    <path style="fill: #fdfd1f" d="M 430,90 A 10,10 0 0 0 440,80 L 430,80 z"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #df6c11" x1="366" y1="20" x2="430" y2="20"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #df6c11" x1="366" y1="90" x2="430" y2="90"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #df6c11" d="M 366,20 A 10,10 0 0 0 356,30"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #df6c11" d="M 440,30 A 10,10 0 0 0 430,20"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #df6c11" x1="356" y1="30" x2="356" y2="80"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #df6c11" x1="440" y1="30" x2="440" y2="80"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #df6c11" d="M 356,80 A 10,10 0 0 0 366,90"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #df6c11" d="M 430,90 A 10,10 0 0 0 440,80"/>
+    <text style="fill: #000000;text-anchor:middle;font-size:12.8;font-family:Times New Roman;font-style:normal;font-weight:700" x="398" y="58.45">
+      <tspan x="398" y="58.45">LWR</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="440" y1="55" x2="462.264" y2="55"/>
+    <polygon style="fill: #000000" points="469.764,55 459.764,60 462.264,55 459.764,50 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="469.764,55 459.764,60 462.264,55 459.764,50 "/>
+  </g>
+  <g>
+    <rect style="fill: #cab8e0" x="482" y="20" width="64" height="70"/>
+    <path style="fill: #cab8e0" d="M 482,20 A 10,10 0 0 0 472,30 L 482,30 z"/>
+    <path style="fill: #cab8e0" d="M 556,30 A 10,10 0 0 0 546,20 L 546,30 z"/>
+    <rect style="fill: #cab8e0" x="472" y="30" width="84" height="50"/>
+    <path style="fill: #cab8e0" d="M 472,80 A 10,10 0 0 0 482,90 L 482,80 z"/>
+    <path style="fill: #cab8e0" d="M 546,90 A 10,10 0 0 0 556,80 L 546,80 z"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #49577a" x1="482" y1="20" x2="546" y2="20"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #49577a" x1="482" y1="90" x2="546" y2="90"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #49577a" d="M 482,20 A 10,10 0 0 0 472,30"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #49577a" d="M 556,30 A 10,10 0 0 0 546,20"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #49577a" x1="472" y1="30" x2="472" y2="80"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #49577a" x1="556" y1="30" x2="556" y2="80"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #49577a" d="M 472,80 A 10,10 0 0 0 482,90"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #49577a" d="M 546,90 A 10,10 0 0 0 556,80"/>
+    <text style="fill: #000000;text-anchor:middle;font-size:12.8;font-family:Times New Roman;font-style:normal;font-weight:700" x="514" y="50.45">
+      <tspan x="514" y="50.45">LWR UF</tspan>
+      <tspan x="514" y="66.45">Storage</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #f9d6b0" x="17.9906" y="20" width="66.7188" height="70"/>
+    <path style="fill: #f9d6b0" d="M 17.9906,20 A 10,10 0 0 0 7.99062,30 L 17.9906,30 z"/>
+    <path style="fill: #f9d6b0" d="M 94.7094,30 A 10,10 0 0 0 84.7094,20 L 84.7094,30 z"/>
+    <rect style="fill: #f9d6b0" x="7.99062" y="30" width="86.7188" height="50"/>
+    <path style="fill: #f9d6b0" d="M 7.99062,80 A 10,10 0 0 0 17.9906,90 L 17.9906,80 z"/>
+    <path style="fill: #f9d6b0" d="M 84.7094,90 A 10,10 0 0 0 94.7094,80 L 84.7094,80 z"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #9a3e13" x1="17.9906" y1="20" x2="84.7094" y2="20"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #9a3e13" x1="17.9906" y1="90" x2="84.7094" y2="90"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #9a3e13" d="M 17.9906,20 A 10,10 0 0 0 7.99062,30"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #9a3e13" d="M 94.7094,30 A 10,10 0 0 0 84.7094,20"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #9a3e13" x1="7.99062" y1="30" x2="7.99062" y2="80"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #9a3e13" x1="94.7094" y1="30" x2="94.7094" y2="80"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #9a3e13" d="M 7.99062,80 A 10,10 0 0 0 17.9906,90"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #9a3e13" d="M 84.7094,90 A 10,10 0 0 0 94.7094,80"/>
+    <text style="fill: #000000;text-anchor:middle;font-size:12.8;font-family:Times New Roman;font-style:normal;font-weight:700" x="51.35" y="42.45">
+      <tspan x="51.35" y="42.45">NU Mining,</tspan>
+      <tspan x="51.35" y="58.45">Milling, &amp;</tspan>
+      <tspan x="51.35" y="74.45">Conversion</tspan>
+    </text>
+  </g>
+  <text style="fill: #000000;text-anchor:start;font-size:12.8;font-family:Times New Roman;font-style:normal;font-weight:700" x="137" y="16.5">
+    <tspan x="137" y="16.5">3.6% U-235</tspan>
+  </text>
+  <text style="fill: #000000;text-anchor:start;font-size:12.8;font-family:Times New Roman;font-style:normal;font-weight:700" x="366.5" y="17">
+    <tspan x="366.5" y="17">40 MWd/kg</tspan>
+  </text>
+</svg>
