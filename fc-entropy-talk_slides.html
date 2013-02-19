@@ -1051,7 +1051,7 @@ p{margin-bottom:0;}
 .rendered_html h4{font-size:100%;margin:0.95em 0;font-weight:bold;}
 .rendered_html h5{font-size:85%;margin:1.5em 0;font-weight:bold;}
 .rendered_html h6{font-size:77%;margin:1.65em 0;font-weight:bold;}
-.rendered_html ul{list-style:disc;margin:1em 2em;}
+.rendered_html ul{list-style:disc;margin:0em 2em;}
 .rendered_html ul ul{list-style:square;margin:0em 2em;}
 .rendered_html ul ul ul{list-style:circle;margin:0em 2em;}
 .rendered_html ol{list-style:decimal;margin:1em 2em;}
@@ -1220,7 +1220,7 @@ div.output_prompt {
 <div class="text_cell_render border-box-sizing rendered_html">
 <div style="text-align:center;"><iframe src=http://en.wikipedia.org/wiki/Nuclear_fuel_cycle?useformat=mobile width=500 height=325></iframe></div>
 </div>
-<div class="fragment" class="text_cell_render border-box-sizing rendered_html">
+<div class="fragment text_cell_render border-box-sizing rendered_html">
 <div style="text-align:right">...but that isn't very formal!</div>
 </div>
 </section>
@@ -1232,17 +1232,17 @@ div.output_prompt {
 </ul>
 <p><img alt="alt text" src="figs/once-through.svg" /></p>
 </div>
-<div class="fragment" class="text_cell_render border-box-sizing rendered_html">
+<div class="fragment text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>These base cases are very well studied.</li>
 </ul>
 </div>
-<div class="fragment" class="text_cell_render border-box-sizing rendered_html">
+<div class="fragment text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>However, what is <strong>not</strong> well known is how these sample scenarios are affected by perturbations to their initial physical parameters.</li>
 </ul>
 </div>
-<div class="fragment" class="text_cell_render border-box-sizing rendered_html">
+<div class="fragment text_cell_render border-box-sizing rendered_html">
 <div style="text-align:center;font-style:italic">Do our intial parameter choices yield the ‘best’ solution?</div>
 </div>
 </section>
@@ -1287,12 +1287,23 @@ table.tftable td {border-width: 1px;padding: 4px;border-style: solid;border-colo
 <tr><td style="text-align:left;"><b>Repository:</b></td><td>Curve Fits</td><td>Rapid Code (<font style="color:red;">Cyder</font>)</td><td>Neutron Transport</td></tr>
 </table>
 </div>
-<div style=display:none class="text_cell_render border-box-sizing rendered_html">
-<script type="text/javascript">IPython.notebook.save_notebook();</script>
+</section>
+<section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Motivation</h2>
+<ul>
+<li>Investigating the region of interest may provide a <em>transformative</em> amount of fuel cycle data.</li>
+</ul>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><p>However, this requires an entirely new spectrum of tools.</p></li>
+</ul>
+<div style="text-align:center;"><img src="figs/fc_stack.svg" /><h3>Figure 2: Fuel Cycle Stack</h3></div>
 </div>
 <div style=display:none class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[58]:</div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="o">!</span>make
 </pre></div>
@@ -1309,6 +1320,7 @@ rm -rf reveal/.git*
 cp classy.css reveal/css/theme/ 
 python ~/nbconvert/nbconvert.py -f reveal fc-entropy-talk.ipynb 
 sed -i &apos;s:reveal/css/theme/classy.css:reveal/css/theme/classy.css:&apos; fc-entropy-talk_slides.html 
+sed -i &apos;s:class=&quot;fragment&quot; class=&quot;text_cell_render:class=&quot;fragment text_cell_render:&apos; fc-entropy-talk_slides.html 
 </pre>
 </div>
 </div>
