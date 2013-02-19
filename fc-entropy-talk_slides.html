@@ -1301,9 +1301,28 @@ table.tftable td {border-width: 1px;padding: 4px;border-style: solid;border-colo
 </ul>
 <div style="text-align:center;"><img src="figs/fc_stack.svg" /><h3>Figure 2: Fuel Cycle Stack</h3></div>
 </div>
+</section>
+<section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Definition</h2>
+<p><em>Essential physics</em> models remain physically valid under perturbations in the locality of the region on which they are defined and do not compute extraneous parameters.</p>
+<p>This is a form of <em>model reduction</em>.</p>
+</div>
+</section>
+<section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>What do Essential Physics Models Buy Us?</h2>
+<p>They allow us to run physically meaningful (if not economically, etc.) fuel cycle simulations.</p>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<p>And not just a few of them, but many.</p>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<p>And when we have many similar things we use (fancy?!) statistics to analyze the ensemble.</p>
+</div>
 <div style=display:none class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="prompt input_prompt">In&nbsp;[64]:</div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="o">!</span>make
 </pre></div>
@@ -1321,6 +1340,7 @@ cp classy.css reveal/css/theme/
 python ~/nbconvert/nbconvert.py -f reveal fc-entropy-talk.ipynb 
 sed -i &apos;s:reveal/css/theme/classy.css:reveal/css/theme/classy.css:&apos; fc-entropy-talk_slides.html 
 sed -i &apos;s:class=&quot;fragment&quot; class=&quot;text_cell_render:class=&quot;fragment text_cell_render:&apos; fc-entropy-talk_slides.html 
+sed -i &apos;s/.rendered_html ul{list-style:disc;margin:0em 2em;}/.rendered_html ul{list-style:disc;margin:0em 2em;}/&apos; fc-entropy-talk_slides.html 
 </pre>
 </div>
 </div>
