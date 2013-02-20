@@ -1282,7 +1282,7 @@ table.tftable td {border-width: 1px;padding: 4px;border-style: solid;border-colo
 
 <table id="modapptable" class="tftable" border="1">
 <tr><th>Component</th><th>Recipes</th><th>Essential</th><th>Transport</th></tr>
-<tr><td style="text-align:left;"><b>Front End:</b></font></td><td>Recipes</td><td>Physics Models</td><td>Physics Models</td></tr>
+<tr><td style="text-align:left;"><b>Front End:</b></td><td>Recipes</td><td>Physics Models</td><td>Physics Models</td></tr>
 <tr><td style="text-align:left;"><b>Reactor:</b></td><td>Recipes</td><td>Rapid Burnup Code (<font style="color:red;">Bright</font>)</td><td>Neutron Transport</td></tr>
 <tr><td style="text-align:left;"><b>Repository:</b></td><td>Curve Fits</td><td>Rapid Code (<font style="color:red;">Cyder</font>)</td><td>Neutron Transport</td></tr>
 </table>
@@ -1327,9 +1327,48 @@ table.tftable td {border-width: 1px;padding: 4px;border-style: solid;border-colo
 </div>
 </section>
 <section>
+<section>
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2>One-Group Reactor Model (R1G)</h2>
-<div style="text-align:center;"><img src="figs/reactor_model.svg" width="70%" /><h3>Figure 3: Reactor Model [1]</h3></div>
+<div style="text-align:center;"><img src="figs/reactor_model.svg" width="65%" /><h3>Figure 3: Reactor Model [1]</h3></div>
+</div>
+</section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>R1G Notation</h2>
+<script type="text/javascript">
+    window.onload=function(){
+    var tfrow = document.getElementById('tab41faec404a5fe25eccf48d4fe9239bfb').rows.length;
+    var tbRow=[];
+    for (var i=1;i<tfrow;i++) {
+        tbRow[i]=document.getElementById('tab41faec404a5fe25eccf48d4fe9239bfb').rows[i];
+        tbRow[i].onmouseover = function(){
+          this.style.backgroundColor = '#f3f8aa';
+        };
+        tbRow[i].onmouseout = function() {
+          this.style.backgroundColor = '#ffffff';
+        };
+    }
+};
+</script>
+
+<table id="tab41faec404a5fe25eccf48d4fe9239bfb" class="tftable" border="1">
+<tr><th>Name</th><th>Symbol</th><th>Units</th></tr>
+<tr><td style="text-align:left;">Fluence</td><td>$F = \int_0^t \phi dt^\prime = \phi \int_0^t dt^\prime = \phi \times t \cdot \frac{24 \cdot 3600 \cdot 10^3}{10^{24}}$</td><td>[n/kb]</td></tr>
+<tr><td style="text-align:left;">Nuclide Subscript</td><td>$i$ (or $j$)</td><td>[1/kg$_i$]</td></tr>
+<tr><td style="text-align:left;">Region Superscript</td><td>$Q$</td><td>[unitless]</td></tr>
+<tr><td style="text-align:left;">Mass Weights</td><td>$m_i^Q = \frac{N_i^Q}{N_{\mbox{IHM}}} = \frac{n_i^Q A_i}{A_{\mbox{IHM}}} \cdot \frac{\rho^Q\cdot\mbox{MW}^F}{\rho^F\cdot\mbox{MW}^Q} \frac{V^Q}{V^F}$</td><td>[kg$_i^Q$/kgIHM]</td></tr>
+<tr><td style="text-align:left;">Burnup</td><td>$\mbox{BU}(F) = \sum_i m_i^F \cdot \mbox{BU}_i(F)$</td><td>[MWd/kgIHM]</td></tr>
+<tr><td style="text-align:left;">Prod & Des Rates</td><td>$p_i(F), d_i(F)$</td><td>[n/s/flux/kg$_i$]</td></tr>
+<tr><td style="text-align:left;">Transmutation Matrix</td><td>$T_{ij}(F)$</td><td>[kg$_j$/kg$_i$]</td></tr>
+<tr><td style="text-align:left;">Multiplication Factor</td><td>$k(F) = \frac{P(F)}{D(F)}$</td><td>[unitless]</td></tr>
+</table>
+</div>
+</section>
+</section>
+<section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Math Trial</h2>
+<p>$x - 10$</p>
 </div>
 </section>
 <section>
@@ -1339,7 +1378,7 @@ table.tftable td {border-width: 1px;padding: 4px;border-style: solid;border-colo
 </div>
 <div style=display:none class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="o">!</span>make
 </pre></div>
