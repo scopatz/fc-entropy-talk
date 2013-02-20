@@ -17,6 +17,7 @@ from hashlib import md5
 align_r = re.compile('\\\\begin{tabular}{(.*?)}', re.DOTALL)
 body_r = re.compile('\\\\begin{tabular}{.*?}(.*?)\\\\end{tabular}', re.DOTALL)
 bold_r = re.compile('\\\\textbf{(.*?)}', re.DOTALL)
+nuc_r = re.compile('\\\\nuc{([A-Za-z]*?)}{([0-9]*?)}')
 
 def texparse(tex):
     tab = {}
@@ -24,9 +25,10 @@ def texparse(tex):
     tab['colalign'] = list(align_r.search(tex).group(1).replace('|', ''))
     body = body_r.search(tex).group(1)
     body = body.replace('\\hline', '').replace("\\&", "__and__")
+    body = body.replace('\\%', '%')
     rows = [[d.strip().replace('__and__', '&') for d in r.split('&')] \
                         for r in body.split('\\\\') if 0 < len(r.strip())]
-    # strip or replace \textbf
+    # strip or replace \textbf and \nuc{}{}
     for i in range(len(rows)):
         for j in range(len(rows[i])):
             m = bold_r.search(rows[i][j])
@@ -35,6 +37,12 @@ def texparse(tex):
                     rows[i][j] = m.group(1)
                 else:
                     rows[i][j] = '<b>' + m.group(1) + '</b>'
+            m = nuc_r.search(rows[i][j])
+            while m is not None:
+                old = m.group(0)
+                new = "$^{{{1}}}${0}".format(m.group(1), m.group(2))
+                rows[i][j] = rows[i][j].replace(old, new)
+                m = nuc_r.search(rows[i][j])
     tab['rows'] = rows
     return tab
 

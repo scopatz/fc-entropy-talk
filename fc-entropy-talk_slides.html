@@ -2282,16 +2282,88 @@ MEQFC0wMBoPBEBUsMDEYDAZDVLDAxGAwGAxR8X8TRljOdm37bAAAAABJRU5ErkJggg==
 <li>From the criticality calculation above we also know the discharge fluence, Fd [n/kb], which will then yield the used fuel vector.</li>
 </ul>
 </div>
+</section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>R1G Benchmark</h2>
+<p><script type="text/javascript">
+    window.onload=function(){
+    var tfrow = document.getElementById('tabfeb20212fdfb40d3acede52690f6d001').rows.length;
+    var tbRow=[];
+    for (var i=1;i<tfrow;i++) {
+        tbRow[i]=document.getElementById('tabfeb20212fdfb40d3acede52690f6d001').rows[i];
+        tbRow[i].onmouseover = function(){
+          this.style.backgroundColor = '#f3f8aa';
+        };
+        tbRow[i].onmouseout = function() {
+          this.style.backgroundColor = '#ffffff';
+        };
+    }
+};
+</script></p>
+<div style="text-align:center;"><h3>Table 2: LWR Benchmark to OECD Burnup Credit [2]</h3></div>
+
+<table id="tabfeb20212fdfb40d3acede52690f6d001" class="tftable" border="1">
+<tr><th>Nuclide</th><th>OECD [2] [w/o]</th><th>$\sigma$ of OECD [%]</th><th>Results [w/o]</th><th>% Difference</th></tr>
+<tr><td style="text-align:left;">$^{234}$U</td><td>0.0178</td><td>9.0</td><td>0.0184</td><td>+3.6</td></tr>
+<tr><td style="text-align:left;">$^{235}$U</td><td>0.8001</td><td>8.1</td><td>0.7079</td><td>-11.5</td></tr>
+<tr><td style="text-align:left;">$^{236}$U</td><td>0.4840</td><td>2.6</td><td>0.4781</td><td>-1.2</td></tr>
+<tr><td style="text-align:left;">$^{238}$U</td><td>93.3333</td><td>0.2</td><td>93.6109</td><td>+0.3</td></tr>
+<tr><td style="text-align:left;">$^{237}$Np</td><td>0.0614</td><td>9.4</td><td>0.0584</td><td>-5.0</td></tr>
+<tr><td style="text-align:left;">$^{238}$Pu</td><td>0.0226</td><td>13.9</td><td>0.0185</td><td>-18.1</td></tr>
+<tr><td style="text-align:left;">$^{239}$Pu</td><td>0.5991</td><td>7.1</td><td>0.5104</td><td>+14.8</td></tr>
+<tr><td style="text-align:left;">$^{240}$Pu</td><td>0.2389</td><td>5.3</td><td>0.2591</td><td>+8.5</td></tr>
+<tr><td style="text-align:left;">$^{241}$Pu</td><td>0.1636</td><td>6.9</td><td>0.1445</td><td>-11.7</td></tr>
+<tr><td style="text-align:left;">$^{242}$Pu</td><td>0.0602</td><td>8.4</td><td>0.0563</td><td>-6.5</td></tr>
+<tr><td style="text-align:left;">$^{241}$Am</td><td>0.0047</td><td>5.3</td><td>0.0032</td><td>-30.8</td></tr>
+<tr><td style="text-align:left;">$^{243}$Am</td><td>0.0148</td><td>10.4</td><td>0.0116</td><td>-21.3</td></tr>
+</table>
+</div>
+</section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>R1G Benchmark Notes</h2>
+<ul>
+<li>This benchmark compares an OECD study for a 40 MWd/kgIHM burn with no cooling.</li>
+</ul>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>This result shows the R1G matches the burnup credit to within two standard deviations for most actinides.</li>
+</ul>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>$^{241}$Am is the only nuclide showing a relatively higher departure.</li>
+</ul>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>This species is formed through $^{241}$Pu decay.</li>
+</ul>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>$^{241}$Am would thus match better if a constant flux or if zero reloading times were not assumed.</li>
+</ul>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>More benchmark results are available <a href="http://bright-dev.github.com/libref/light_water_reactor1g.html#light-water-reactor-benchmark">here</a> and 
+  <a href="http://bright-dev.github.com/libref/fast_reactor1g.html#fast-reactor-benchmark">here</a>.</li>
+</ul>
+</div>
 </section>
 </section>
 <section>
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2>References</h2>
-<p>[1]: Anthony M. Scopatz and Erich a. Schneider. “A new method for rapid computation of transient fuel cycle material balances”. In: Nuclear Engineering and Design 239.10 (Oct. 2009), pp. 2169–2184. ISSN: 00295493. DOI: 10.1016/j.nucengdes.2009.02.022. URL: http://linkinghub.elsevier.com/retrieve/pii/S0029549309000922</p>
+<ol>
+<li>Anthony M. Scopatz and Erich a. Schneider. “A new method for rapid computation of transient fuel cycle material balances”. In: Nuclear Engineering and Design 239.10 (Oct. 2009), pp. 2169–2184. ISSN: 00295493. DOI: 10.1016/j.nucengdes.2009.02.022. URL: http://linkinghub.elsevier.com/retrieve/pii/S0029549309000922</li>
+<li>M Takano. Burnup Credit Criticality Benchmark - Result of Phase 1A - NEA/NSC/DOC(93)22. Tech. rep. January. Nuclear Energy Agency, 1994, pp. 1–147</li>
+</ol>
 </div>
 <div style=display:none class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="o">!</span>make
 </pre></div>
