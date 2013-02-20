@@ -4,6 +4,8 @@ nbcdir = ~/nbconvert
 all:
 	cp -r $(nbcdir)/reveal . $<
 	rm -rf reveal/.git* $<
+	mkdir -p js $<
+	cp $(nbcdir)/js/mathjax-onload.js js
 	cp classy.css reveal/css/theme/ $<
 	python $(nbcdir)/nbconvert.py -f reveal $(notebook).ipynb $<
 	sed -i 's:reveal/css/theme/simple.css:reveal/css/theme/classy.css:' fc-entropy-talk_slides.html $<
