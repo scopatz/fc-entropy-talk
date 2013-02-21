@@ -17,6 +17,8 @@ from hashlib import md5
 align_r = re.compile('\\\\begin{tabular}{(.*?)}', re.DOTALL)
 body_r = re.compile('\\\\begin{tabular}{.*?}(.*?)\\\\end{tabular}', re.DOTALL)
 bold_r = re.compile('\\\\textbf{(.*)}', re.DOTALL)
+mono_r = re.compile('\\\\texttt{(.*)}', re.DOTALL)
+red_r = re.compile('\\\\[Rr]ed{(.*)}', re.DOTALL)
 nuc_r = re.compile('\\\\nuc{([A-Za-z]*?)}{([0-9]*?)}')
 supernum_r = re.compile('\\\\superscript{([eE\-+0-9\.]*?)}')
 
@@ -27,7 +29,7 @@ def texparse(tex):
     tab['colalign'] = list(align_r.search(tex).group(1).replace('|', ''))
     body = body_r.search(tex).group(1)
     body = body.replace('\\hline', '').replace("\\&", "__and__")
-    body = body.replace('\\%', '%')
+    body = body.replace('\\%', '%').replace('\\_', '_')
     rows = [[d.strip().replace('__and__', '&') for d in r.split('&')] \
                         for r in body.split('\\\\') if 0 < len(r.strip())]
     # strip or replace \textbf and \nuc{}{}
@@ -53,6 +55,15 @@ def texparse(tex):
                     rows[i][j] = m.group(1)
                 else:
                     rows[i][j] = '<b>' + m.group(1) + '</b>'
+
+            m = red_r.search(rows[i][j])
+            if m is not None:
+                rows[i][j] = m.group(1)
+
+            m = mono_r.search(rows[i][j])
+            if m is not None:
+                rows[i][j] = '<code>' + m.group(1) + '</code>'
+
     tab['rows'] = rows
     return tab
 
