@@ -16,8 +16,10 @@ from hashlib import md5
 #align_r = re.compile('\\begin{tabular}{(.*?)}', re.DOTALL)
 align_r = re.compile('\\\\begin{tabular}{(.*?)}', re.DOTALL)
 body_r = re.compile('\\\\begin{tabular}{.*?}(.*?)\\\\end{tabular}', re.DOTALL)
-bold_r = re.compile('\\\\textbf{(.*?)}', re.DOTALL)
+bold_r = re.compile('\\\\textbf{(.*)}', re.DOTALL)
 nuc_r = re.compile('\\\\nuc{([A-Za-z]*?)}{([0-9]*?)}')
+supernum_r = re.compile('\\\\superscript{([eE\-+0-9\.]*?)}')
+
 
 def texparse(tex):
     tab = {}
@@ -31,18 +33,26 @@ def texparse(tex):
     # strip or replace \textbf and \nuc{}{}
     for i in range(len(rows)):
         for j in range(len(rows[i])):
-            m = bold_r.search(rows[i][j])
-            if m is not None:
-                if i == 0:
-                    rows[i][j] = m.group(1)
-                else:
-                    rows[i][j] = '<b>' + m.group(1) + '</b>'
+            m = supernum_r.search(rows[i][j])
+            while m is not None:
+                old = m.group(0)
+                new = "$^{{{0}}}$".format(m.group(1))
+                rows[i][j] = rows[i][j].replace(old, new)
+                m = supernum_r.search(rows[i][j])
+
             m = nuc_r.search(rows[i][j])
             while m is not None:
                 old = m.group(0)
                 new = "$^{{{1}}}${0}".format(m.group(1), m.group(2))
                 rows[i][j] = rows[i][j].replace(old, new)
                 m = nuc_r.search(rows[i][j])
+
+            m = bold_r.search(rows[i][j])
+            if m is not None:
+                if i == 0:
+                    rows[i][j] = m.group(1)
+                else:
+                    rows[i][j] = '<b>' + m.group(1) + '</b>'
     tab['rows'] = rows
     return tab
 
