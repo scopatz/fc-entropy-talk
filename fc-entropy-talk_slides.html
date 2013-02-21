@@ -2645,6 +2645,239 @@ MEQFC0wMBoPBEBUsMDEYDAZDVLDAxGAwGAxR8X8TRljOdm37bAAAAABJRU5ErkJggg==
 <tr><td style="text-align:left;"><code>Drift_Diameter</code></td><td>5.5 [m]</td><td>+0.26</td><td>+0.58</td></tr>
 </table>
 </div>
+</section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Counterintuitive Results</h2>
+<ul>
+<li>For drift diameter, both $S_{-x}$ and $S_{+x}$ are positive!<ul>
+<li>This arises from the assumption that the drift diameter very small as compared to the spacing between drifts.</li>
+</ul>
+</li>
+<li>Since the base-case sits near a local drift diameter minimum, linear sensitivities will never capture the full effect on the response.</li>
+</ul>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Additionally egregious is that, with increasing LWR burnup, the repository capacity goes down!<ul>
+<li>This due to the overall TRU production <em>per unit energy produced from the LWRs</em> declining.</li>
+</ul>
+</li>
+</ul>
+</div>
+</section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>LWR Burnup Sensitivity</h2>
+<p><div style="text-align:center;"><img src="figs/lwr_bud_sensitivity_repcap.svg" width="80%" /></div></p>
+</div>
+</section>
+</section>
+<section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<div style="text-align:center;"><h1>Information Theoretic Analysis</h1></div>
+</div>
+</section>
+<section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Entropy Based Methodology</h2>
+<ul>
+<li>Here again, the system-wide impact of physical parameter perturbations is quantified.</li>
+</ul>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>This is done by performing <strong>Contingency Table</strong> analysis for each parameter to the <em>repository capacity</em> response.</li>
+</ul>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Denote fuel cycle responses as $R$ [GWh] for $x$ &amp; $y$ input parameters.</li>
+</ul>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><strong>Goal:</strong> Determine strength of association between inputs and pairs of inputs to the response in a manner that is independent of:<ul>
+<li>the functional form of the response to the input $R(x)$,</li>
+<li>and any base-case set of initial inputs.</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Entropy Based Methodology</h2>
+<p><div style="text-align:center;"><img src="figs/monte_carlo_meth.svg" width="45%" /></div></p>
+</div>
+</section>
+<section>
+<section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Input Parameter Definition</h2>
+<p><script type="text/javascript">
+    window.onload=function(){
+    var tfrow = document.getElementById('tabbff371b3eef0cbef5050ed9f0903079e').rows.length;
+    var tbRow=[];
+    for (var i=1;i<tfrow;i++) {
+        tbRow[i]=document.getElementById('tabbff371b3eef0cbef5050ed9f0903079e').rows[i];
+        tbRow[i].onmouseover = function(){
+          this.style.backgroundColor = '#f3f8aa';
+        };
+        tbRow[i].onmouseout = function() {
+          this.style.backgroundColor = '#ffffff';
+        };
+    }
+};
+</script></p>
+<table id="tabbff371b3eef0cbef5050ed9f0903079e" class="tftable" border="1">
+<tr><th>Input Parameter $x$</th><th>Min</th><th>Max</th><th>Units</th><th>Sample Type</th></tr>
+<tr><td style="text-align:left;">LWR Burnup Level</td><td>30.0</td><td>80.0</td><td>MWd/kgIHM</td><td>linear</td></tr>
+<tr><td style="text-align:left;">LWR Fuel to Moderator Ratio</td><td>0.28</td><td>0.36</td><td></td><td>linear</td></tr>
+<tr><td style="text-align:left;">LWR SNF Storage Time</td><td>3</td><td>30</td><td>years</td><td>linear</td></tr>
+<tr><td style="text-align:left;">SE of U from LWR UF</td><td>0.99</td><td>0.9999</td><td></td><td>nines</td></tr>
+<tr><td style="text-align:left;">SE of NP from LWR UF</td><td>0.9</td><td>0.9999</td><td></td><td>nines</td></tr>
+<tr><td style="text-align:left;">SE of PU from LWR UF</td><td>0.9</td><td>0.9999</td><td></td><td>nines</td></tr>
+<tr><td style="text-align:left;">SE of AM from LWR UF</td><td>0.9</td><td>0.9999</td><td></td><td>nines</td></tr>
+<tr><td style="text-align:left;">SE of CM from LWR UF</td><td>0.9</td><td>0.9999</td><td></td><td>nines</td></tr>
+<tr><td style="text-align:left;">SE of CS from LWR UF</td><td>0.9</td><td>0.9999</td><td></td><td>nines</td></tr>
+<tr><td style="text-align:left;">SE of SR from LWR UF</td><td>0.9</td><td>0.9999</td><td></td><td>nines</td></tr>
+<tr><td style="text-align:left;">FR Burnup Level</td><td>100.0</td><td>200.0</td><td>MWd/kgIHM</td><td>linear</td></tr>
+<tr><td style="text-align:left;">FR TRU Conversion Ratio</td><td>0.25</td><td>0.95</td><td></td><td>linear</td></tr>
+<tr><td style="text-align:left;">Max Fraction of Lanthanide in FR Fuel</td><td>0.0001</td><td>0.005</td><td>Atoms/TRU Atom</td><td>linear</td></tr>
+<tr><td style="text-align:left;">FR UF Storage Time</td><td>3</td><td>30</td><td>years</td><td>linear</td></tr>
+<tr><td style="text-align:left;">Storage Before Disposal</td><td>1</td><td>300</td><td>years</td><td>log</td></tr>
+</table>
+</div>
+</section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Input Parameter Definition</h2>
+<p><script type="text/javascript">
+    window.onload=function(){
+    var tfrow = document.getElementById('tab259d9367bb5bb3971342e592c5281d57').rows.length;
+    var tbRow=[];
+    for (var i=1;i<tfrow;i++) {
+        tbRow[i]=document.getElementById('tab259d9367bb5bb3971342e592c5281d57').rows[i];
+        tbRow[i].onmouseover = function(){
+          this.style.backgroundColor = '#f3f8aa';
+        };
+        tbRow[i].onmouseout = function() {
+          this.style.backgroundColor = '#ffffff';
+        };
+    }
+};
+</script></p>
+<table id="tab259d9367bb5bb3971342e592c5281d57" class="tftable" border="1">
+<tr><th>Input Parameter $x$</th><th>Min</th><th>Max</th><th>Units</th><th>Sample Type</th></tr>
+<tr><td style="text-align:left;">SE of U from FR UF</td><td>0.99</td><td>0.9999</td><td></td><td>nines</td></tr>
+<tr><td style="text-align:left;">SE of NP from FR UF</td><td>0.9</td><td>0.9999</td><td></td><td>nines</td></tr>
+<tr><td style="text-align:left;">SE of PU from FR UF</td><td>0.9</td><td>0.9999</td><td></td><td>nines</td></tr>
+<tr><td style="text-align:left;">SE of AM from FR UF</td><td>0.9</td><td>0.9999</td><td></td><td>nines</td></tr>
+<tr><td style="text-align:left;">SE of CM from FR UF</td><td>0.9</td><td>0.9999</td><td></td><td>nines</td></tr>
+<tr><td style="text-align:left;">SE of CS from FR UF</td><td>0.9</td><td>0.9999</td><td></td><td>nines</td></tr>
+<tr><td style="text-align:left;">SE of SR from FR UF</td><td>0.9</td><td>0.9999</td><td></td><td>nines</td></tr>
+<tr><td style="text-align:left;">Density of Host Rock</td><td>2317</td><td>2869</td><td>kg/m$^{3}$</td><td>linear</td></tr>
+<tr><td style="text-align:left;">Specific Heat of Host Rock</td><td>590</td><td>1270</td><td>J/kg-K</td><td>linear</td></tr>
+<tr><td style="text-align:left;">Thermal Conductivity of Host Rock</td><td>1.9204</td><td>3.2856</td><td>W/m-K</td><td>linear</td></tr>
+<tr><td style="text-align:left;">Heat Loss Factor During Ventilation</td><td>0.806</td><td>0.914</td><td></td><td>linear</td></tr>
+<tr><td style="text-align:left;">Drift diameter</td><td>4.5</td><td>6.5</td><td>m</td><td>linear</td></tr>
+<tr><td style="text-align:left;">Ventilation System On Time</td><td>10</td><td>300</td><td>years</td><td>log</td></tr>
+<tr><td style="text-align:left;">Ambient Environment Temperature</td><td>12.82</td><td>32.82</td><td>C</td><td>linear</td></tr>
+<tr><td style="text-align:left;">Distance Between Drifts</td><td>56</td><td>106</td><td>m</td><td>linear</td></tr>
+</table>
+</div>
+</section>
+</section>
+<section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Entropy Based Methodology</h2>
+<ul>
+<li>Before attempting to comprehend the subtleties of a 30+ dimensional surface, prudence demands a check to see if all 30 variables are <em>really</em> needed...</li>
+</ul>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>(Hint: probably not!)</li>
+</ul>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Thus a quantitative ranking of the <em>associations</em> of each input parameter to the response is desired.</li>
+</ul>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>(Note that these associations do not imply a linear response!)</li>
+</ul>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>These rankings are obtained by borrowing an analysis tool that is often used in Biology: <em>Contingency Tables</em>.</li>
+</ul>
+</div>
+</section>
+<section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Contingency Tables</h2>
+<p>The $2\times 2$ table is most common:
+<script type="text/javascript">
+    window.onload=function(){
+    var tfrow = document.getElementById('tabe8436325e0563ac25523148e69d2087e').rows.length;
+    var tbRow=[];
+    for (var i=1;i<tfrow;i++) {
+        tbRow[i]=document.getElementById('tabe8436325e0563ac25523148e69d2087e').rows[i];
+        tbRow[i].onmouseover = function(){
+          this.style.backgroundColor = '#f3f8aa';
+        };
+        tbRow[i].onmouseout = function() {
+          this.style.backgroundColor = '#ffffff';
+        };
+    }
+};
+</script></p>
+<table id="tabe8436325e0563ac25523148e69d2087e" class="tftable" border="1">
+<tr><th></th><th>Blonde</th><th>Brunette</th><th>Totals</th></tr>
+<tr><td style="text-align:left;"><b>Female</b></td><td>18</td><td>17</td><td>35</td></tr>
+<tr><td style="text-align:left;"><b>Male</b></td><td>11</td><td>14</td><td>25</td></tr>
+<tr><td style="text-align:left;"><b>Totals</b></td><td>29</td><td>31</td><td>60</td></tr>
+</table>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<p>But doesn't this approach ignore the underlying biology?</p>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<div style="text-align:right;"><h2>Yes!</h2></div>
+</div>
+</section>
+<section>
+<section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Contingency Tables</h2>
+<p><div style="text-align:center;"><img src="figs/CTBlackBox/CTBlackBox01.png" width="70%" /></div></p>
+</div>
+</section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Contingency Tables</h2>
+<p><div style="text-align:center;"><img src="figs/CTBlackBox/CTBlackBox02.png" width="70%" /></div></p>
+</div>
+</section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Contingency Tables</h2>
+<p><div style="text-align:center;"><img src="figs/CTBlackBox/CTBlackBox03.png" width="70%" /></div></p>
+</div>
+</section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Contingency Tables</h2>
+<p><div style="text-align:center;"><img src="figs/CTBlackBox/CTBlackBox04.png" width="70%" /></div></p>
+</div>
+</section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Contingency Tables</h2>
+<p><div style="text-align:center;"><img src="figs/CTBlackBox/CTBlackBox05.png" width="70%" /></div></p>
+</div>
+</section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Contingency Tables</h2>
+<p><div style="text-align:center;"><img src="figs/CTBlackBox/CTBlackBox06.png" width="70%" /></div></p>
+</div>
 </section>
 </section>
 <section>
@@ -2658,7 +2891,7 @@ MEQFC0wMBoPBEBUsMDEYDAZDVLDAxGAwGAxR8X8TRljOdm37bAAAAABJRU5ErkJggg==
 </div>
 <div style=display:none class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="o">!</span>make
 </pre></div>
