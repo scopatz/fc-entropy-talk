@@ -1203,7 +1203,7 @@ div.output_prompt {
 </div>
 <div style=display:none class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib</span>
@@ -1414,7 +1414,7 @@ table.boarderlesscenteredtable td {border: 0px;padding: 4px;text-align:center;}
 </div>
 <div style=display:none class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="s">&quot;31.0    	62.0    	93.0    	124.0    	155.0    	186.0    	217.0    	248.0    	279.0    	310.0    	341.0    	372.0    	403.0    	434.0    	465.0    	496.0    	527.0    	558.0    	589.0    	620.0    	651.0    	682.0    	713.0    	744.0    	775.0    	806.0    	837.0    	868.0    	899.0    	930.0    	961.0    	992.0    	1023.0    	1054.0    	1085.0    	1116.0    	1147.0    	1178.0    	1209.0    	1240.0    	1271.0    	1302.0    	1333.0    	1364.0    	1395.0    	1426.0    	1457.0    	1488.0    	1519.0    	1550.0    	1581.0    	1612.0    	1643.0    	1674.0    	1705.0    	1736.0    	1767.0    	1798.0    	1829.0    	1860.0    	1891.0    	1922.0    	1953.0    	1984.0    	2015.0    	2046.0    	2077.0    	2108.0    	2139.0    	2170.0    	2201.0    	2232.0    	2263.0    	2294.0    	2325.0    	2356.0    	2387.0    	2418.0    	2449.0    	2480.0    	2511.0    	2542.0    	2573.0    	2604.0    	2635.0    	2666.0    	2697.0    	2728.0    	2759.0    	2790.0    	2821.0    	2852.0    	2883.0    	2914.0    	2945.0    	2976.0    	3007.0    	3038.0    	3069.0    	3100.0    	3131.0    	3162.0    	3193.0    	3224.0    	3255.0    	3286.0    	3317.0    	3348.0    	3379.0    	3410.0    	3441.0    	3472.0    	3503.0    	3534.0    	3565.0    	3596.0    	3627.0    	3658.0    	3689.0    	3720.0    	3751.0    	3782.0    	3813.0    	3844.0    	3875.0    	3906.0    	3937.0    	3968.0    	3999.0    	4030.0    	4061.0    	4092.0    	4123.0    	4154.0    	4185.0    	4216.0    	4247.0    	4278.0    	4309.0    	4340.0    	4371.0    	4402.0    	4433.0&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">(),</span> <span class="nb">float</span><span class="p">)</span>
 <span class="n">pu239burn</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="s">&quot;8.72e+000	1.74e+001	2.59e+001	3.44e+001	4.27e+001	5.10e+001	5.92e+001	6.73e+001	7.54e+001	8.33e+001	9.12e+001	9.90e+001	1.07e+002	1.14e+002	1.22e+002	1.29e+002	1.37e+002	1.44e+002	1.51e+002	1.59e+002	1.66e+002	1.73e+002	1.80e+002	1.87e+002	1.94e+002	2.00e+002	2.07e+002	2.14e+002	2.20e+002	2.27e+002	2.33e+002	2.40e+002	2.46e+002	2.52e+002	2.59e+002	2.65e+002	2.71e+002	2.77e+002	2.83e+002	2.89e+002	2.95e+002	3.00e+002	3.06e+002	3.12e+002	3.17e+002	3.23e+002	3.29e+002	3.34e+002	3.39e+002	3.45e+002	3.50e+002	3.55e+002	3.61e+002	3.66e+002	3.71e+002	3.76e+002	3.81e+002	3.86e+002	3.91e+002	3.96e+002	4.00e+002	4.05e+002	4.10e+002	4.15e+002	4.19e+002	4.24e+002	4.28e+002	4.33e+002	4.37e+002	4.42e+002	4.46e+002	4.50e+002	4.55e+002	4.59e+002	4.63e+002	4.67e+002	4.71e+002	4.76e+002	4.80e+002	4.84e+002	4.88e+002	4.92e+002	4.95e+002	4.99e+002	5.03e+002	5.07e+002	5.11e+002	5.14e+002	5.18e+002	5.22e+002	5.25e+002	5.29e+002	5.32e+002	5.36e+002	5.39e+002	5.43e+002	5.46e+002	5.50e+002	5.53e+002	5.56e+002	5.60e+002	5.63e+002	5.66e+002	5.69e+002	5.73e+002	5.76e+002	5.79e+002	5.82e+002	5.85e+002	5.88e+002	5.91e+002	5.94e+002	5.97e+002	6.00e+002	6.03e+002	6.06e+002	6.08e+002	6.11e+002	6.14e+002	6.17e+002	6.19e+002	6.22e+002	6.25e+002	6.28e+002	6.30e+002	6.33e+002	6.35e+002	6.38e+002	6.40e+002	6.43e+002	6.46e+002	6.48e+002	6.50e+002	6.53e+002	6.55e+002	6.58e+002	6.60e+002	6.62e+002	6.65e+002	6.67e+002	6.69e+002	6.72e+002	6.74e+002&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">(),</span> <span class="nb">float</span><span class="p">)</span>
@@ -2538,7 +2538,7 @@ MEQFC0wMBoPBEBUsMDEYDAZDVLDAxGAwGAxR8X8TRljOdm37bAAAAABJRU5ErkJggg==
 </table>
 
 <ol>
-<li>Model with initial LWR 235 U enrichment of 4.2 w/o.</li>
+<li>Model with initial LWR $^{235}$U enrichment of 4.2 w/o.</li>
 <li>Model with LWR discharge burnup of 50 MWd/kg.</li>
 </ol>
 </div>
@@ -2882,16 +2882,108 @@ MEQFC0wMBoPBEBUsMDEYDAZDVLDAxGAwGAxR8X8TRljOdm37bAAAAABJRU5ErkJggg==
 </section>
 <section>
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2>Fuel Cycle Contingency Tables</h2>
+<p>For example, let's construct a 2D contingency table that measures the response from a sample input: fast reactor fuel plutonium separation efficiency, <code>FR_SE_PU</code>.</p>
+<script type="text/javascript">
+    window.onload=function(){
+    var tfrow = document.getElementById('tabaa0f8495ac586524fca408c7e77721cd').rows.length;
+    var tbRow=[];
+    for (var i=1;i<tfrow;i++) {
+        tbRow[i]=document.getElementById('tabaa0f8495ac586524fca408c7e77721cd').rows[i];
+        tbRow[i].onmouseover = function(){
+          this.style.backgroundColor = '#f3f8aa';
+        };
+        tbRow[i].onmouseout = function() {
+          this.style.backgroundColor = '#ffffff';
+        };
+    }
+};
+</script>
+
+<table id="tabaa0f8495ac586524fca408c7e77721cd" class="tftable" border="1" style="width:90%;">
+<tr><th style="text-align:center;"></td><th style="text-align:center;">$0.9<$<code>SE</code>$<0.99$</td><th style="text-align:center;">$0.99<$<code>SE</code>$<0.999$</td><th style="text-align:center;">$0.999<$<code>SE</code>$<0.9999$</td><th style="text-align:center;"></td></tr>
+<tr><td>$10^4 <$ <code>Capacity</code> $< 10^5$</td><td>$739$</td><td>$43$</td><td>$27$</td><td>$809$</td></tr>
+<tr><td>$10^5 <$ <code>Capacity</code> $< 10^6$</td><td>$31510$</td><td>$21611$</td><td>$19469$</td><td>$72590$</td></tr>
+<tr><td>$10^6 <$ <code>Capacity</code> $< 10^7$</td><td>$2648$</td><td>$13095$</td><td>$14430$</td><td>$30173$</td></tr>
+<tr><td>$10^7 <$ <code>Capacity</code> $< 10^8$</td><td>$0$</td><td>$213$</td><td>$1053$</td><td>$1266$</td></tr>
+<tr><td></td><td>$34897$</td><td>$34962$</td><td>$34979$</td><td>$104838$</td></tr>
+</table>
+</div>
+</section>
+<section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Contingency Table Statistics</h2>
+<p>There are several metrics that have been developed to measure associations with contingency tables.</p>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<p>The primary measure here is the Uncertainty Coefficient $U(x|R)$.</p>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<p>To calculate $U(x|R)$ the following are needed:</p>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>The Entropy $H(x)$, which is a measure of how evenly the data is spread out in the $x$ parameter.</li>
+</ul>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>The Mutual Information $I(R,x)$ which states the shared value of the $x$ together with $R$.</li>
+</ul>
+</div>
+</section>
+<section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Contingency Table Statistics</h2>
+<p>Denote the entries in a contingency table as $N_{ij}$ for the $i$-th response bin and the $j$-th input bin.</p>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<p>The probability of landing in a given bin is therefore,
+<div style="text-align:center;">$p_{ij} = \frac{N_{ij}}{N}$</div></p>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<p>Thus the entropy is calculated from,
+<div style="text-align:center;">$H(x) = - \sum_j^J p_{\cdot j} \ln(p_{\cdot j})$</div></p>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<p>The mutual information is found via,
+<div style="text-align:center;">$I(R,x) = - \sum_{i,j}^{I,J} p_{ij} \ln\left(\frac{p_{ij}}{p_{i\cdot}\cdot p_{\cdot j}}\right)$</div></p>
+</div>
+</section>
+<section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Visual Relationship</h2>
+<div style="text-align:center;"><img src="figs/entropy-relation-diagram.svg" /><h3>Figure 11: Entropy Relations [4]</h3></div>
+</div>
+</section>
+<section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Contingency Table Statistics</h2>
+<p>The uncertainty coefficient is then calculated from,
+<div style="text-align:center;">$U(x|R) = \frac{I(R,x)}{H(x)}$</div></p>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<p>This metric has the following useful properties:</p>
+<ol>
+<li>Defined on the range $[0, 1]$.</li>
+<li>$U(x|R) = 0$ implies that $I(R,x) = 0$, which indicates that the parameter is unassociated with the response.</li>
+<li>$U(x|R) = 1$ requires that $I(R,x) = H(x)$.  This implies that the system response $R(x)$ is solely determined by $x$.</li>
+</ol>
+</div>
+</section>
+<section>
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2>References</h2>
 <ol>
 <li>Anthony M. Scopatz and Erich a. Schneider. “A new method for rapid computation of transient fuel cycle material balances”. In: Nuclear Engineering and Design 239.10 (Oct. 2009), pp. 2169–2184. ISSN: 00295493. DOI: 10.1016/j.nucengdes.2009.02.022. URL: http://linkinghub.elsevier.com/retrieve/pii/S0029549309000922</li>
 <li>M Takano. Burnup Credit Criticality Benchmark - Result of Phase 1A - NEA/NSC/DOC(93)22. Tech. rep. January. Nuclear Energy Agency, 1994, pp. 1–147</li>
 <li>OECD. Advanced Nuclear Fuel Cycles and Radioactive Waste Management - NEA-5990. Tech. rep. Nuclear Energy Agency, 2006, pp. 1–248</li>
+<li>http://en.wikipedia.org/wiki/File:Entropy-mutual-information-relative-entropy-relation-diagram.svg</li>
 </ol>
 </div>
 <div style=display:none class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="o">!</span>make
 </pre></div>
@@ -2918,7 +3010,6 @@ sed -i &apos;s/.rendered_html ul{list-style:disc;margin:0em 2em;}/.rendered_html
 </div>
 </div>
 </div>
-
 </section>
 </div></div>
 

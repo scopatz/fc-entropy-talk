@@ -62,7 +62,9 @@ def texparse(tex):
 
             m = mono_r.search(rows[i][j])
             if m is not None:
-                rows[i][j] = '<code>' + m.group(1) + '</code>'
+                old = m.group(0)
+                new = '<code>' + m.group(1) + '</code>'
+                rows[i][j] = rows[i][j].replace(old, new)
 
     tab['rows'] = rows
     return tab
@@ -92,9 +94,20 @@ def jstab(tab):
     hrow = tab['rows'][0]
     body = tab['rows'][1:]
     align = tab['colalign']
-    headers = "<tr><th>"
-    headers += "</th><th>".join(hrow)
-    headers += "</th></tr>"
+    if 2 < len(sys.argv) and '--header-align' == sys.argv[2]:
+        headers = "<tr>"
+        for a, d in zip(align, hrow):
+            if a == 'c':
+                headers += '<th style="text-align:center;">' + d + '</td>'
+            elif a == 'r':
+                headers += '<td style="text-align:right;">' + d + '</td>'
+            else:
+                headers += '<td>' + d + '</td>'
+        headers += "</tr>"
+    else:
+        headers = "<tr><th>"
+        headers += "</th><th>".join(hrow)
+        headers += "</th></tr>"
     rows = []
     for brow in body:
         assert len(brow) == len(align)
