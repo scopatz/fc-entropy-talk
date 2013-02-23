@@ -3052,6 +3052,209 @@ MEQFC0wMBoPBEBUsMDEYDAZDVLDAxGAwGAxR8X8TRljOdm37bAAAAABJRU5ErkJggg==
 </section>
 <section>
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2>$U(x|R)$ Rankings vs $U(R|x)$ Rankings</h2>
+<p>$U(x|R)$ is related to $U(R|x)$ via the following expression:
+<div style="text-align:center;">$U(x|R) = \frac{H(R)}{H(x)}U(R|x)$</div></p>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<p>This is effectively an entropic re-expression of Bayes' Theorem:
+<div style="text-align:center;">$p(x|R) = \frac{p(x)}{p(R)}p(R|x)$</div></p>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<p>Due to the stochastic driver, all $H(x)$ must be the same - to within error - for all $x$. Also, since there is only one repsonse, $H(R)$ is the same the for all $x$.</p>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<p>Hence, $U(x|R) = k U(R|x)$.<br />
+</p>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<p><strong>Scaling the uncertainty coefficients by a constant does not affect the relative rank ordering.</strong></p>
+</div>
+</section>
+<section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Entropy Based Covariance</h2>
+<ul>
+<li>Now that the association of $x$ to $R$ may be determined, finding the sensitivity of $R(x)$ to other inputs.</li>
+</ul>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Call $y$ an input parameter distinct from $x$.  Measuring the simultaneous effect of two inputs to a response may be performed using 3D tables!</li>
+</ul>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Note that <em>'slices'</em> of these 3D tables may be seen as 2D tables bins along a specific cut of data.</li>
+</ul>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>For 30 inputs, there are $_{30}C_2 = 435$ contingency tables to construct.</li>
+</ul>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Different metrics will be needed to account for the added dimensionality.</li>
+</ul>
+</div>
+</section>
+<section>
+<section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>FR Pu SE and HLW Storage Time</h2>
+<p><script type="text/javascript">
+    window.onload=function(){
+    var tfrow = document.getElementById('tab208012a719c318f977bd42f638253360').rows.length;
+    var tbRow=[];
+    for (var i=1;i<tfrow;i++) {
+        tbRow[i]=document.getElementById('tab208012a719c318f977bd42f638253360').rows[i];
+        tbRow[i].onmouseover = function(){
+          this.style.backgroundColor = '#f3f8aa';
+        };
+        tbRow[i].onmouseout = function() {
+          this.style.backgroundColor = '#ffffff';
+        };
+    }
+};
+</script></p>
+<div style="text-align:center;"><h3>Slice for 1 < <code>HLW_Storage_Time</code> < 6.694</h3></div>
+
+<table id="tab208012a719c318f977bd42f638253360" class="tftable" border="1" style="width:90%;">
+<tr><th style="text-align:center;"></td><th style="text-align:center;">$0.9<$<code>SE</code>$<0.99$</td><th style="text-align:center;">$0.99<$<code>SE</code>$<0.999$</td><th style="text-align:center;">$0.999<$<code>SE</code>$< 0.9999$</td><th style="text-align:center;"></td></tr>
+<tr><td>$10^4 <$ <code>Capacity</code> $< 10^5$</td><td>$419$</td><td>$23$</td><td>$14$</td><td>$456$</td></tr>
+<tr><td>$10^5 <$ <code>Capacity</code> $< 10^6$</td><td>$11145$</td><td>$9970$</td><td>$9553$</td><td>$30668$</td></tr>
+<tr><td>$10^6 <$ <code>Capacity</code> $< 10^7$</td><td>$110$</td><td>$1556$</td><td>$2085$</td><td>$3751$</td></tr>
+<tr><td>$10^7 <$ <code>Capacity</code> $< 10^8$</td><td>$0$</td><td>$0$</td><td>$0$</td><td>$0$</td></tr>
+<tr><td></td><td>$11674$</td><td>$11549$</td><td>$11652$</td><td>$34875$</td></tr>
+</table>
+
+<script type="text/javascript">
+    window.onload=function(){
+    var tfrow = document.getElementById('tabb9c7af3b4f3dd87047923443f541a2f5').rows.length;
+    var tbRow=[];
+    for (var i=1;i<tfrow;i++) {
+        tbRow[i]=document.getElementById('tabb9c7af3b4f3dd87047923443f541a2f5').rows[i];
+        tbRow[i].onmouseover = function(){
+          this.style.backgroundColor = '#f3f8aa';
+        };
+        tbRow[i].onmouseout = function() {
+          this.style.backgroundColor = '#ffffff';
+        };
+    }
+};
+</script>
+
+<div style="text-align:center;"><h3>Slice for 6.694 < <code>HLW_Storage_Time</code> < 44.814</h3></div>
+
+<table id="tabb9c7af3b4f3dd87047923443f541a2f5" class="tftable" border="1" style="width:90%;">
+<tr><th style="text-align:center;"></td><th style="text-align:center;">$0.9<$<code>SE</code>$<0.99$</td><th style="text-align:center;">$0.99<$<code>SE</code>$<0.999$</td><th style="text-align:center;">$0.999<$<code>SE</code>$< 0.9999$</td><th style="text-align:center;"></td></tr>
+<tr><td>$10^4 <$ <code>Capacity</code> $< 10^5$</td><td>$273$</td><td>$19$</td><td>$11$</td><td>$303$</td></tr>
+<tr><td>$10^5 <$ <code>Capacity</code> $< 10^6$</td><td>$10859$</td><td>$7527$</td><td>$6373$</td><td>$24759$</td></tr>
+<tr><td>$10^6 <$ <code>Capacity</code> $< 10^7$</td><td>$484$</td><td>$4157$</td><td>$5175$</td><td>$9816$</td></tr>
+<tr><td>$10^7 <$ <code>Capacity</code> $< 10^8$</td><td>$0$</td><td>$2$</td><td>$24$</td><td>$26$</td></tr>
+<tr><td></td><td>$11616$</td><td>$11705$</td><td>$11583$</td><td>$34904$</td></tr>
+</table>
+</div>
+</section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>FR Pu SE and HLW Storage Time</h2>
+<script type="text/javascript">
+    window.onload=function(){
+    var tfrow = document.getElementById('tab7ab9424dcfd2debefa7194ad091550b3').rows.length;
+    var tbRow=[];
+    for (var i=1;i<tfrow;i++) {
+        tbRow[i]=document.getElementById('tab7ab9424dcfd2debefa7194ad091550b3').rows[i];
+        tbRow[i].onmouseover = function(){
+          this.style.backgroundColor = '#f3f8aa';
+        };
+        tbRow[i].onmouseout = function() {
+          this.style.backgroundColor = '#ffffff';
+        };
+    }
+};
+</script>
+
+<div style="text-align:center;"><h3>Slice for 44.814 < <code>HLW_Storage_Time</code> < 300</h3></div>
+
+<table id="tab7ab9424dcfd2debefa7194ad091550b3" class="tftable" border="1" style="width:90%;">
+<tr><th style="text-align:center;"></td><th style="text-align:center;">$0.9<$<code>SE</code>$<0.99$</td><th style="text-align:center;">$0.99<$<code>SE</code>$<0.999$</td><th style="text-align:center;">$0.999<$<code>SE</code>$< 0.9999$</td><th style="text-align:center;"></td></tr>
+<tr><td>$10^4 <$ <code>Capacity</code> $< 10^5$</td><td>$47$</td><td>$1$</td><td>$2$</td><td>$50$</td></tr>
+<tr><td>$10^5 <$ <code>Capacity</code> $< 10^6$</td><td>$9506$</td><td>$4114$</td><td>$3543$</td><td>$17163$</td></tr>
+<tr><td>$10^6 <$ <code>Capacity</code> $< 10^7$</td><td>$2054$</td><td>$7382$</td><td>$7170$</td><td>$16606$</td></tr>
+<tr><td>$10^7 <$ <code>Capacity</code> $< 10^8$</td><td>$0$</td><td>$211$</td><td>$1029$</td><td>$1240$</td></tr>
+<tr><td></td><td>$11607$</td><td>$11708$</td><td>$11744$</td><td>$35059$</td></tr>
+</table>
+
+<script type="text/javascript">
+    window.onload=function(){
+    var tfrow = document.getElementById('tab9b05fda2f926c1cb9c80c60af3329032').rows.length;
+    var tbRow=[];
+    for (var i=1;i<tfrow;i++) {
+        tbRow[i]=document.getElementById('tab9b05fda2f926c1cb9c80c60af3329032').rows[i];
+        tbRow[i].onmouseover = function(){
+          this.style.backgroundColor = '#f3f8aa';
+        };
+        tbRow[i].onmouseout = function() {
+          this.style.backgroundColor = '#ffffff';
+        };
+    }
+};
+</script>
+
+<div style="text-align:center;"><h3>Aggregation over <code>HLW_Storage_Time</code></h3></div>
+
+<table id="tab9b05fda2f926c1cb9c80c60af3329032" class="tftable" border="1" style="width:90%;">
+<tr><th style="text-align:center;"></td><th style="text-align:center;">$0.9<$<code>SE</code>$<0.99$</td><th style="text-align:center;">$0.99<$<code>SE</code>$<0.999$</td><th style="text-align:center;">$0.999<$<code>SE</code>$< 0.9999$</td><th style="text-align:center;"></td></tr>
+<tr><td>$10^4 <$ <code>Capacity</code> $< 10^5$</td><td>$739$</td><td>$43$</td><td>$27$</td><td>$809$</td></tr>
+<tr><td>$10^5 <$ <code>Capacity</code> $< 10^6$</td><td>$31510$</td><td>$21611$</td><td>$19469$</td><td>$72590$</td></tr>
+<tr><td>$10^6 <$ <code>Capacity</code> $< 10^7$</td><td>$2648$</td><td>$13095$</td><td>$14430$</td><td>$30173$</td></tr>
+<tr><td>$10^7 <$ <code>Capacity</code> $< 10^8$</td><td>$0$</td><td>$213$</td><td>$1053$</td><td>$1266$</td></tr>
+<tr><td></td><td>$34897$</td><td>$34962$</td><td>$34979$</td><td>$104838$</td></tr>
+</table>
+</div>
+</section>
+</section>
+<section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Covariance Statistics</h2>
+<ul>
+<li>While $U(x,y|R)$ is roughly equivalent to the concept of <em>mutual sensitivity</em>, 3D tables should allow for an information theoretic parallel to <em>covariance</em>.</li>
+</ul>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>In general for contingency tables covariance is not well defined, however here there is the special stochastic situation where $x$ and $y$ are known <em>a priori</em> to be independent of $R$.</li>
+</ul>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Therefore, the following new coefficient of variation metric is proposed.</li>
+</ul>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>$c_v(x|y|R)$ is the <em>'sensitivity of sensitivity'</em>, or how much an input affects the response of another input.</li>
+</ul>
+</div>
+</section>
+<section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Covariance Statistics</h2>
+<p>First, define:
+<div style="text-align:center;">$U(x|R)|y = \left\{ \left.U(x|R)\right|_{l_0}^{l_1} , \left.U(x|R)\right|_{l_1}^{l_2} , \ldots \left.U(x|R)\right|_{l_{C-1}}^{l_C}  \right\}$</div></p>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<p>Then the coefficient of variation is,
+<div style="text-align:center;">$c_v(U(x|R)|y) = \frac{\sigma(U(x|R)|y)}{\mu(U(x|R)|y)}$</div></p>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<p>Finally, the symmetric $c_v$ is set as:
+<div style="text-align:center;">$c_v(x|y|R) = \frac{1}{2} \left(c_v(U(x|R)|y) + c_v(U(y|R)|x)\right)$</div></p>
+</div>
+</section>
+<section>
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2>References</h2>
 <ol>
 <li>Anthony M. Scopatz and Erich a. Schneider. “A new method for rapid computation of transient fuel cycle material balances”. In: Nuclear Engineering and Design 239.10 (Oct. 2009), pp. 2169–2184. ISSN: 00295493. DOI: 10.1016/j.nucengdes.2009.02.022. URL: http://linkinghub.elsevier.com/retrieve/pii/S0029549309000922</li>
@@ -3062,7 +3265,7 @@ MEQFC0wMBoPBEBUsMDEYDAZDVLDAxGAwGAxR8X8TRljOdm37bAAAAABJRU5ErkJggg==
 </div>
 <div style=display:none class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[110]:</div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="o">!</span>make
 </pre></div>
