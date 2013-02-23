@@ -1203,7 +1203,7 @@ div.output_prompt {
 </div>
 <div style=display:none class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib</span>
@@ -1414,7 +1414,7 @@ table.boarderlesscenteredtable td {border: 0px;padding: 4px;text-align:center;}
 </div>
 <div style=display:none class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="s">&quot;31.0    	62.0    	93.0    	124.0    	155.0    	186.0    	217.0    	248.0    	279.0    	310.0    	341.0    	372.0    	403.0    	434.0    	465.0    	496.0    	527.0    	558.0    	589.0    	620.0    	651.0    	682.0    	713.0    	744.0    	775.0    	806.0    	837.0    	868.0    	899.0    	930.0    	961.0    	992.0    	1023.0    	1054.0    	1085.0    	1116.0    	1147.0    	1178.0    	1209.0    	1240.0    	1271.0    	1302.0    	1333.0    	1364.0    	1395.0    	1426.0    	1457.0    	1488.0    	1519.0    	1550.0    	1581.0    	1612.0    	1643.0    	1674.0    	1705.0    	1736.0    	1767.0    	1798.0    	1829.0    	1860.0    	1891.0    	1922.0    	1953.0    	1984.0    	2015.0    	2046.0    	2077.0    	2108.0    	2139.0    	2170.0    	2201.0    	2232.0    	2263.0    	2294.0    	2325.0    	2356.0    	2387.0    	2418.0    	2449.0    	2480.0    	2511.0    	2542.0    	2573.0    	2604.0    	2635.0    	2666.0    	2697.0    	2728.0    	2759.0    	2790.0    	2821.0    	2852.0    	2883.0    	2914.0    	2945.0    	2976.0    	3007.0    	3038.0    	3069.0    	3100.0    	3131.0    	3162.0    	3193.0    	3224.0    	3255.0    	3286.0    	3317.0    	3348.0    	3379.0    	3410.0    	3441.0    	3472.0    	3503.0    	3534.0    	3565.0    	3596.0    	3627.0    	3658.0    	3689.0    	3720.0    	3751.0    	3782.0    	3813.0    	3844.0    	3875.0    	3906.0    	3937.0    	3968.0    	3999.0    	4030.0    	4061.0    	4092.0    	4123.0    	4154.0    	4185.0    	4216.0    	4247.0    	4278.0    	4309.0    	4340.0    	4371.0    	4402.0    	4433.0&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">(),</span> <span class="nb">float</span><span class="p">)</span>
 <span class="n">pu239burn</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="s">&quot;8.72e+000	1.74e+001	2.59e+001	3.44e+001	4.27e+001	5.10e+001	5.92e+001	6.73e+001	7.54e+001	8.33e+001	9.12e+001	9.90e+001	1.07e+002	1.14e+002	1.22e+002	1.29e+002	1.37e+002	1.44e+002	1.51e+002	1.59e+002	1.66e+002	1.73e+002	1.80e+002	1.87e+002	1.94e+002	2.00e+002	2.07e+002	2.14e+002	2.20e+002	2.27e+002	2.33e+002	2.40e+002	2.46e+002	2.52e+002	2.59e+002	2.65e+002	2.71e+002	2.77e+002	2.83e+002	2.89e+002	2.95e+002	3.00e+002	3.06e+002	3.12e+002	3.17e+002	3.23e+002	3.29e+002	3.34e+002	3.39e+002	3.45e+002	3.50e+002	3.55e+002	3.61e+002	3.66e+002	3.71e+002	3.76e+002	3.81e+002	3.86e+002	3.91e+002	3.96e+002	4.00e+002	4.05e+002	4.10e+002	4.15e+002	4.19e+002	4.24e+002	4.28e+002	4.33e+002	4.37e+002	4.42e+002	4.46e+002	4.50e+002	4.55e+002	4.59e+002	4.63e+002	4.67e+002	4.71e+002	4.76e+002	4.80e+002	4.84e+002	4.88e+002	4.92e+002	4.95e+002	4.99e+002	5.03e+002	5.07e+002	5.11e+002	5.14e+002	5.18e+002	5.22e+002	5.25e+002	5.29e+002	5.32e+002	5.36e+002	5.39e+002	5.43e+002	5.46e+002	5.50e+002	5.53e+002	5.56e+002	5.60e+002	5.63e+002	5.66e+002	5.69e+002	5.73e+002	5.76e+002	5.79e+002	5.82e+002	5.85e+002	5.88e+002	5.91e+002	5.94e+002	5.97e+002	6.00e+002	6.03e+002	6.06e+002	6.08e+002	6.11e+002	6.14e+002	6.17e+002	6.19e+002	6.22e+002	6.25e+002	6.28e+002	6.30e+002	6.33e+002	6.35e+002	6.38e+002	6.40e+002	6.43e+002	6.46e+002	6.48e+002	6.50e+002	6.53e+002	6.55e+002	6.58e+002	6.60e+002	6.62e+002	6.65e+002	6.67e+002	6.69e+002	6.72e+002	6.74e+002&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">(),</span> <span class="nb">float</span><span class="p">)</span>
@@ -2354,14 +2354,198 @@ MEQFC0wMBoPBEBUsMDEYDAZDVLDAxGAwGAxR8X8TRljOdm37bAAAAABJRU5ErkJggg==
 </section>
 </section>
 <section>
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2>Multigroup Reactor Model</h2>
-</div>
-</section>
 <section>
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2>Enrichment Model</h2>
+<h2>Multigroup Reactor Model (RMG)</h2>
+<ul>
+<li>In the R1G, fluxes are assumed to be static over the course of the burn.</li>
+</ul>
 </div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>This restricts the types of reactors and fuel cycles which may be modeled. (MOX, IMF, Traveling Wave, <em>etc.</em> are unavailable to the R1G.)</li>
+</ul>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Also in the R1G, changing reactor state variables in a way that would affect the flux spectrum required additional libraries, or inter-library interpolations.</li>
+</ul>
+</div>
+</section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>RMG</h2>
+<ul>
+<li>To solve these issues, moving to a multi-energy group reactor model will enable automatic spectral shifts in the core as needed.</li>
+</ul>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Rather than parameterizing burnup, transmutation, and neutron production &amp; destruction rates as functions of nuclide and fluence, the RMG parameterizes cross sections over a number of different states.</li>
+</ul>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>The R1G parameters are explicitly solved for by the RMG model.</li>
+</ul>
+</div>
+</section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>RMG</h2>
+<ul>
+<li>Group constants are denoted by $\sigma_{r_x,i\tau g}$ or $\sigma_{r_x,ipg}$ [b].</li>
+<li>Group-to-group scattering by $\sigma_{s,i\tau g\to h}$ or $\sigma_{s,ipg\to h}$.</li>
+</ul>
+<script type="text/javascript">
+    window.onload=function(){
+    var tfrow = document.getElementById('tab48f7a68634f91dbdbdb2956017657c7d').rows.length;
+    var tbRow=[];
+    for (var i=1;i<tfrow;i++) {
+        tbRow[i]=document.getElementById('tab48f7a68634f91dbdbdb2956017657c7d').rows[i];
+        tbRow[i].onmouseover = function(){
+          this.style.backgroundColor = '#f3f8aa';
+        };
+        tbRow[i].onmouseout = function() {
+          this.style.backgroundColor = '#ffffff';
+        };
+    }
+};
+</script>
+
+<div style="text-align:center;"><h3>Table 8: Cross Section Indices</h3></div>
+
+<table id="tab48f7a68634f91dbdbdb2956017657c7d" class="tftable" border="1">
+<tr><th>Index</th><th>Symbol</th></tr>
+<tr><td style="text-align:left;">Nuclide</td><td>$i$</td></tr>
+<tr><td style="text-align:left;">Time</td><td>$\tau$</td></tr>
+<tr><td style="text-align:left;">Perturbation</td><td>$p$</td></tr>
+<tr><td style="text-align:left;">Incident Energy Group</td><td>$g$</td></tr>
+<tr><td style="text-align:left;">Exiting Energy Group</td><td>$h$</td></tr>
+<tr><td style="text-align:left;">Reaction Channel [5]</td><td>$r_x$</td></tr>
+</table>
+</div>
+</section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Reactor State Variables</h2>
+<script type="text/javascript">
+    window.onload=function(){
+    var tfrow = document.getElementById('tabb8edb58aa70287d3ccdfe30420d63d50').rows.length;
+    var tbRow=[];
+    for (var i=1;i<tfrow;i++) {
+        tbRow[i]=document.getElementById('tabb8edb58aa70287d3ccdfe30420d63d50').rows[i];
+        tbRow[i].onmouseover = function(){
+          this.style.backgroundColor = '#f3f8aa';
+        };
+        tbRow[i].onmouseout = function() {
+          this.style.backgroundColor = '#ffffff';
+        };
+    }
+};
+</script>
+
+<div style="text-align:center;"><h3>Table 9: Parameters $a_p$ which Define a Perturbation</h3></div>
+
+<table id="tabb8edb58aa70287d3ccdfe30420d63d50" class="tftable" border="1">
+<tr><th>Parameter</th><th>Symbol</th><th>Units</th></tr>
+<tr><td style="text-align:left;">Fuel Density</td><td>$\rho_{\mbox{fuel}}$</td><td>g/cm$^{3}$</td></tr>
+<tr><td style="text-align:left;">Cladding Density</td><td>$\rho_{\mbox{clad}}$</td><td>g/cm$^{3}$</td></tr>
+<tr><td style="text-align:left;">Coolant Density</td><td>$\rho_{\mbox{cool}}$</td><td>g/cm$^{3}$</td></tr>
+<tr><td style="text-align:left;">Fuel Cell Radius</td><td>$r_{\mbox{fuel}}$</td><td>cm</td></tr>
+<tr><td style="text-align:left;">Void Cell Radius</td><td>$r_{\mbox{void}}$</td><td>cm</td></tr>
+<tr><td style="text-align:left;">Cladding Cell Radius</td><td>$r_{\mbox{clad}}$</td><td>cm</td></tr>
+<tr><td style="text-align:left;">Unit Cell Pitch</td><td>$\ell$</td><td>cm</td></tr>
+<tr><td style="text-align:left;">Number of Burn Regions</td><td>$b_r$</td><td></td></tr>
+<tr><td style="text-align:left;">Fuel Specific Power</td><td>$p_s$</td><td>MW/kgIHM</td></tr>
+<tr><td style="text-align:left;">Initial Nuclide Mass Fraction</td><td>$T_{i0}$</td><td>kg$_i$/kgIHM</td></tr>
+<tr><td style="text-align:left;">Burn Times</td><td>$s$</td><td>days</td></tr>
+</table>
+</div>
+</section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Multicomponent Enrichment Model</h2>
+<script type="text/javascript">
+    window.onload=function(){
+    var tfrow = document.getElementById('tab06ef02eceb409b497693dd0b6736a197').rows.length;
+    var tbRow=[];
+    for (var i=1;i<tfrow;i++) {
+        tbRow[i]=document.getElementById('tab06ef02eceb409b497693dd0b6736a197').rows[i];
+        tbRow[i].onmouseover = function(){
+          this.style.backgroundColor = '#f3f8aa';
+        };
+        tbRow[i].onmouseout = function() {
+          this.style.backgroundColor = '#ffffff';
+        };
+    }
+};
+</script>
+
+<div style="text-align:center;"><h3>Table 10: Outer Product Perturbations</h3></div>
+
+<table id="tab06ef02eceb409b497693dd0b6736a197" class="tftable" border="1">
+<tr><th style="text-align:center;">$\rho_{\mbox{fuel}}$</td><th style="text-align:center;">$\rho_{\mbox{clad}}$</td><th style="text-align:center;">$\rho_{\mbox{cool}}$</td><th style="text-align:center;">$r_{\mbox{fuel}}$</td><th style="text-align:center;">$r_{\mbox{void}}$</td><th style="text-align:center;">$r_{\mbox{clad}}$</td><th style="text-align:center;">$\ell$</td><th style="text-align:center;">$b_r$</td><th style="text-align:center;">$p_s$</td><th style="text-align:center;">$T_{\mbox{$^{235}$U0}}$</td><th style="text-align:center;">$s$</td></tr>
+<tr><td>10.165</td><td>5.87</td><td>0.73</td><td>0.41</td><td>0.4185</td><td>0.475</td><td>1.3127</td><td>10</td><td>0.04</td><td>0.03</td><td>0</td></tr>
+<tr><td>10.165</td><td>5.87</td><td>0.73</td><td>0.41</td><td>0.4185</td><td>0.475</td><td>1.3127</td><td>10</td><td>0.04</td><td>0.03</td><td>100</td></tr>
+<tr><td>10.165</td><td>5.87</td><td>0.73</td><td>0.41</td><td>0.4185</td><td>0.475</td><td>1.3127</td><td>10</td><td>0.04</td><td>0.03</td><td>200</td></tr>
+<tr><td>10.165</td><td>5.87</td><td>0.73</td><td>0.41</td><td>0.4185</td><td>0.475</td><td>1.3127</td><td>10</td><td>0.04</td><td>0.03</td><td>300</td></tr>
+<tr><td>10.165</td><td>5.87</td><td>0.73</td><td>0.41</td><td>0.4185</td><td>0.475</td><td>1.3127</td><td>10</td><td>0.04</td><td>0.03</td><td>400</td></tr>
+<tr><td>10.165</td><td>5.87</td><td>0.73</td><td>0.41</td><td>0.4185</td><td>0.475</td><td>1.3127</td><td>10</td><td>0.04</td><td>0.05</td><td>0</td></tr>
+<tr><td>10.165</td><td>5.87</td><td>0.73</td><td>0.41</td><td>0.4185</td><td>0.475</td><td>1.3127</td><td>10</td><td>0.04</td><td>0.05</td><td>100</td></tr>
+<tr><td>10.165</td><td>5.87</td><td>0.73</td><td>0.41</td><td>0.4185</td><td>0.475</td><td>1.3127</td><td>10</td><td>0.04</td><td>0.05</td><td>200</td></tr>
+<tr><td>10.165</td><td>5.87</td><td>0.73</td><td>0.41</td><td>0.4185</td><td>0.475</td><td>1.3127</td><td>10</td><td>0.04</td><td>0.05</td><td>200</td></tr>
+<tr><td>10.165</td><td>5.87</td><td>0.73</td><td>0.41</td><td>0.4185</td><td>0.475</td><td>1.3127</td><td>10</td><td>0.04</td><td>0.05</td><td>300</td></tr>
+<tr><td>10.165</td><td>5.87</td><td>0.73</td><td>0.41</td><td>0.4185</td><td>0.475</td><td>1.3127</td><td>10</td><td>0.04</td><td>0.05</td><td>400</td></tr>
+<tr><td>$\vdots$</td><td>$\vdots$</td><td>$\vdots$</td><td>$\vdots$</td><td>$\vdots$</td><td>$\vdots$</td><td>$\vdots$</td><td>$\vdots$</td><td>$\vdots$</td><td>$\vdots$</td><td>$\vdots$</td></tr>
+</table>
+</div>
+</section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Cross Section Generation</h2>
+<ul>
+<li>Cross section generation takes a multi-tier approach.</li>
+</ul>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>For very important nuclides, $\sigma_{pg}$ were found via the Monte Carlo neutron transport code Serpent [6] (slightly modified).</li>
+</ul>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>For important species for which high-fidelity continuous cross section data is not available, physical models and/or a flux weighted collapse of 64-group CINDER data is used.</li>
+</ul>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>For species unimportant to the FC material balance, a simple interpolation between thermal and fast cross sections from KAERI is used to generate group constants.</li>
+</ul>
+</div>
+</section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>RMG Methodology</h2>
+<ul>
+<li>Once the cross-section library has been assembled, the RMG proceeds in three main calculation routines per time step.</li>
+</ul>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>First, there is as a nearest-neighbor calculation from the given reactor state to the perturbations states in the library.</li>
+</ul>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>A multigroup spectrum-criticality calculation.</li>
+</ul>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>A burnup-transmutation calculation.</li>
+</ul>
+</div>
+</section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Multigroup Reactor Model Flow Diagram</h2>
+<div style="text-align:center;"><img src="figs/method_diagram.svg" width="60%" /></div>
+</div>
+</section>
 </section>
 <section>
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -3255,17 +3439,112 @@ MEQFC0wMBoPBEBUsMDEYDAZDVLDAxGAwGAxR8X8TRljOdm37bAAAAABJRU5ErkJggg==
 </section>
 <section>
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2>Covariance Statistics</h2>
+<p>$c_v(x|y|R)$ has the following properties:</p>
+<ul>
+<li>Defined on the range $[0, 1]$ since $0 \le U \le 1$.</li>
+<li>$c_v = 0$ implies that $\sigma = 0$, which indicates that $U(x|R)$ shows no association with $y$.  Thus there are no covariant effects observed.</li>
+<li>$c_v = 1$ indicates that $\sigma = \mu$.  This connotes that the value of $x$ solely governs the response $R$ from $y$.</li>
+</ul>
+</div>
+</section>
+<section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Top Covariant Parameter Pair Rankings</h2>
+<script type="text/javascript">
+    window.onload=function(){
+    var tfrow = document.getElementById('tab457060fd6a141ed4b00cfcff0a8c4a89').rows.length;
+    var tbRow=[];
+    for (var i=1;i<tfrow;i++) {
+        tbRow[i]=document.getElementById('tab457060fd6a141ed4b00cfcff0a8c4a89').rows[i];
+        tbRow[i].onmouseover = function(){
+          this.style.backgroundColor = '#f3f8aa';
+        };
+        tbRow[i].onmouseout = function() {
+          this.style.backgroundColor = '#ffffff';
+        };
+    }
+};
+</script>
+
+<table id="tab457060fd6a141ed4b00cfcff0a8c4a89" class="tftable" border="1">
+<tr><th>Rank</th><th>$x$</th><th>$y$</th><th>$c_v(x|y|R)$</th></tr>
+<tr><td style="text-align:right;">1</td><td style="text-align:left;"><code>FR_SE_AM</code></td><td style="text-align:left;"><code>HLW_Storage_Time</code></td><td>0.02318</td></tr>
+<tr><td style="text-align:right;">2</td><td style="text-align:left;"><code>FR_SE_AM</code></td><td style="text-align:left;"><code>FR_SE_PU</code></td><td>0.02316</td></tr>
+<tr><td style="text-align:right;">3</td><td style="text-align:left;"><code>HLW_Storage_Time</code></td><td style="text-align:left;"><code>LWR_UF_Storage_Time</code></td><td>0.01557</td></tr>
+<tr><td style="text-align:right;">4</td><td style="text-align:left;"><code>FR_SE_PU</code></td><td style="text-align:left;"><code>HLW_Storage_Time</code></td><td>0.01556</td></tr>
+<tr><td style="text-align:right;">5</td><td style="text-align:left;"><code>HLW_Storage_Time</code></td><td style="text-align:left;"><code>LWR_SE_PU</code></td><td>0.01155</td></tr>
+<tr><td style="text-align:right;">6</td><td style="text-align:left;"><code>FR_SE_AM</code></td><td style="text-align:left;"><code>FR_TRU_CR</code></td><td>0.01061</td></tr>
+<tr><td style="text-align:right;">7</td><td style="text-align:left;"><code>FR_SE_PU</code></td><td style="text-align:left;"><code>LWR_UF_Storage_Time</code></td><td>0.008192</td></tr>
+<tr><td style="text-align:right;">8</td><td style="text-align:left;"><code>FR_SE_PU</code></td><td style="text-align:left;"><code>LWR_SE_PU</code></td><td>0.008</td></tr>
+<tr><td style="text-align:right;">9</td><td style="text-align:left;"><code>FR_BUd</code></td><td style="text-align:left;"><code>FR_SE_AM</code></td><td>0.007716</td></tr>
+<tr><td style="text-align:right;">10</td><td style="text-align:left;"><code>Ambient_Temp</code></td><td style="text-align:left;"><code>FR_SE_PU</code></td><td>0.007489</td></tr>
+<tr><td style="text-align:right;">11</td><td style="text-align:left;"><code>Ambient_Temp</code></td><td style="text-align:left;"><code>HLW_Storage_Time</code></td><td>0.007367</td></tr>
+<tr><td style="text-align:right;">12</td><td style="text-align:left;"><code>HLW_Storage_Time</code></td><td style="text-align:left;"><code>LWR_SE_AM</code></td><td>0.007248</td></tr>
+<tr><td style="text-align:right;">13</td><td style="text-align:left;"><code>Ambient_Temp</code></td><td style="text-align:left;"><code>FR_SE_CS</code></td><td>0.007235</td></tr>
+<tr><td style="text-align:right;">14</td><td style="text-align:left;"><code>Ambient_Temp</code></td><td style="text-align:left;"><code>LWR_Fuel2Mod</code></td><td>0.007066</td></tr>
+<tr><td style="text-align:right;">15</td><td style="text-align:left;"><code>Ambient_Temp</code></td><td style="text-align:left;"><code>Heat_Loss_Factor</code></td><td>0.007044</td></tr>
+</table>
+</div>
+</section>
+<section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Covariant Parameter Pair Example</h2>
+<div style="text-align:center;"><img src="figs/covar_pp_ex.svg" width="60%" /><h3>Figure 11: Total & Top Contributors to Decay Heat [Watts/kg] of HLW for (<code>FR_SE_AM</code>, <code>FR_SE_PU</code>).</h3></div>
+</div>
+</section>
+<section>
+<section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Ensuring Good Statistics</h2>
+<p><strong>How do we know that we have picked a sufficient number of bins?</strong></p>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<p>Different partitioning schemes may significantly alter our measures.  Consider a a chamber the moment after a piston
+has been suddenly removed, as in a Carnot heat engine:
+<div style="text-align:center;"><img src="figs/piston.svg" width="80%" /><h3>Figure 12: Abstract Piston with Representative Partitions: Blue Line for 2 Bins, Red Line for 5 Bins.</h3></div></p>
+</div>
+</section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Ensuring Good Statistics</h2>
+<p>We thus want to pick the minumum number of bins after which our metrics (and rankings) have stablized.</p>
+<div style="text-align:center;"><img src="figs/bin_dynamics.svg" width="60%" /><h3>Figure 13: Dynamic Effects of Binning Structure Example: $U(x,y|R)$ for the parameter pair (<code>FR_SE_PU</code>, <code>LWR_SE_NP</code>) to repository capacity.</h3></div>
+</div>
+</section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Ensuring Good Statistics</h2>
+<p><em>But how many runs are needed to achieve this binning?</em></p>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<p>For the covariance measures (which determines the statistics), note that: 
+<div style="text-align:center;">$I(x,y) \to 0$ as $N \to \infty$.</center></p>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<p>Set $t$ as a fractional statistical tolerance, ie $t=0.01$ is 1% error.</p>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<p>Then the mutual information goes as $I = t^d$ for $d$ indpendent inputs.  Here, $d = 2$ for $x$ &amp; $y$.</p>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<p>For $J$ number $x$ bins and $K$ number of $y$ bins, the total number of runs required is estimated by:
+<div style="text-align:center;">$N \approx \frac{1}{t^2}JK$</div></p>
+</div>
+</section>
+</section>
+<section>
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2>References</h2>
 <ol>
 <li>Anthony M. Scopatz and Erich a. Schneider. “A new method for rapid computation of transient fuel cycle material balances”. In: Nuclear Engineering and Design 239.10 (Oct. 2009), pp. 2169–2184. ISSN: 00295493. DOI: 10.1016/j.nucengdes.2009.02.022. URL: http://linkinghub.elsevier.com/retrieve/pii/S0029549309000922</li>
 <li>M Takano. Burnup Credit Criticality Benchmark - Result of Phase 1A - NEA/NSC/DOC(93)22. Tech. rep. January. Nuclear Energy Agency, 1994, pp. 1–147</li>
 <li>OECD. Advanced Nuclear Fuel Cycles and Radioactive Waste Management - NEA-5990. Tech. rep. Nuclear Energy Agency, 2006, pp. 1–248</li>
-<li>http://en.wikipedia.org/wiki/File:Entropy-mutual-information-relative-entropy-relation-diagram.svg</li>
+<li>http://en.wikipedia.org/wiki/File:Entropy-mutual-information-relative-entropy-relation-diagram.svg\</li>
+<li>Nuclear Energy Data Files. Los Alamos National Laboratory - Theoretical Nuclear Physics. 2009. URL: http://t2.lanl.gov/data/data.html</li>
 </ol>
 </div>
 <div style=display:none class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
-<div class="prompt input_prompt">In&nbsp;[110]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="o">!</span>make
 </pre></div>
