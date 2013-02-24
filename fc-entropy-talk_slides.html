@@ -2696,6 +2696,46 @@ MEQFC0wMBoPBEBUsMDEYDAZDVLDAxGAwGAxR8X8TRljOdm37bAAAAABJRU5ErkJggg==
 </section>
 </section>
 <section>
+<section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Multicomponent Enrichment Model</h2>
+<p>Here are the matched abundance ratio cascade equations:</p>
+<div style="text-align:center;">$\frac{x_j^P}{x_j^F}\cdot\frac{P}{F} - \frac{\beta_j^{N_T+1} - 1}{\beta_j^{N_T+1} - \beta_j^{-N_P}} = 0$</div>
+
+<div style="text-align:center;">$\left(\frac{x_j^F}{\frac{T}{F}} \cdot \frac{1 - \beta_i^{-N_P}}{\beta_j^{N_T+1} - \beta_j^{-N_P}} \right) - ( x_j^T\cdot\sum_i^{I} x_i^T ) = 0$</div>
+
+<div style="text-align:center;">$\min\left[\frac{L}{F}\right]\to \frac{d}{dM^*} \frac{L}{F} = 0$</div>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<p>What if we solved these equations symbolically, rather than numerically..</p>
+</div>
+</section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Multicomponent Enrichment</h2>
+<p>...and use code generation to produce a blazing solver.</p>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<div style="text-align:center;"><img src="figs/sme_codegen_pipeline.svg" width="80%" /></div>
+</div>
+<div class="fragment text_cell_render border-box-sizing rendered_html">
+<div style="text-align:center;"><img src="figs/sme_loverf.svg" width="40%" /></div>
+</div>
+</section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Multicomponent Enrichment</h2>
+<p>We get really big speedups (20-300x)!</p>
+<table class="boarderlesscenteredtable" border="0">
+<tr><td><img src="figs/sme_solver_exec_times.svg"/></td><td><img src="figs/sme_min_exec_times.svg"/></td></tr>
+<tr><td><b>(a) per iteration</b></td><td><b>(b) over minimzation</b></td></tr>
+</table>
+
+<div style="text-align:center;"><h3>Figure 23: Execution Timing Comparison</h3></div>
+
+<p>See http://pynesim.org/usersguide/enrichment.html for more details.</p>
+</div>
+</section>
+</section>
+<section>
 <div class="text_cell_render border-box-sizing rendered_html">
 <div style="text-align:center;"><h1>Fuel Cycle Sensitivity Study</h1></div>
 </div>
@@ -3686,8 +3726,10 @@ has been suddenly removed, as in a Carnot heat engine:
 <li>Anthony M. Scopatz and Erich a. Schneider. “A new method for rapid computation of transient fuel cycle material balances”. In: Nuclear Engineering and Design 239.10 (Oct. 2009), pp. 2169–2184. ISSN: 00295493. DOI: 10.1016/j.nucengdes.2009.02.022. URL: http://linkinghub.elsevier.com/retrieve/pii/S0029549309000922</li>
 <li>M Takano. Burnup Credit Criticality Benchmark - Result of Phase 1A - NEA/NSC/DOC(93)22. Tech. rep. January. Nuclear Energy Agency, 1994, pp. 1–147</li>
 <li>OECD. Advanced Nuclear Fuel Cycles and Radioactive Waste Management - NEA-5990. Tech. rep. Nuclear Energy Agency, 2006, pp. 1–248</li>
-<li>http://en.wikipedia.org/wiki/File:Entropy-mutual-information-relative-entropy-relation-diagram.svg\</li>
+<li>http://en.wikipedia.org/wiki/File:Entropy-mutual-information-relative-entropy-relation-diagram.svg</li>
 <li>Nuclear Energy Data Files. Los Alamos National Laboratory - Theoretical Nuclear Physics. 2009. URL: http://t2.lanl.gov/data/data.html</li>
+<li>Jaakko Lepp. PSG2 / Serpent âA ̧ a Continuous-energy Monte Carlo Reactor Physics Burnup Calculation Code. Tech. rep. 2011, p. 157</li>
+<li>A G Croff. ORIGEN 2.2 - CCC-371. Tech. rep. Oak Ridge National Laboratory, 2002, pp. 1–222</li>
 </ol>
 </div>
 <div style=display:none class="cell border-box-sizing code_cell vbox">
